@@ -2,6 +2,9 @@ package games.bevs.minecraftbut.senerarios;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -15,15 +18,20 @@ public class NoJump extends Senerario
 		super("No Jump", butWorld);
 	}
 
+	private void applyNoJump(Player player)
+	{
+		if(player.getGameMode() == GameMode.SURVIVAL)
+		{
+			player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 1000, 20 * 60 * 60, false));
+		}
+	}
+	
 	
 	@Override
 	public void onStart()
 	{
 		Bukkit.getOnlinePlayers().forEach(player -> {
-			if(player.getGameMode() == GameMode.SURVIVAL)
-			{
-				player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 1000, 20 * 20000, false));
-			}
+			applyNoJump(player);
 		});
 	}
 	
@@ -36,5 +44,12 @@ public class NoJump extends Senerario
 				player.removePotionEffect(PotionEffectType.JUMP);
 			}
 		});
+	}
+	
+	@EventHandler
+	public void onJoin(PlayerJoinEvent e)
+	{
+		Player player = e.getPlayer();
+		applyNoJump(player);
 	}
 }
