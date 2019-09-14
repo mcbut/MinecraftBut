@@ -19,9 +19,9 @@ public class TNTRain extends Senerario
 	public void onStart()
 	{
 		this.repeat(() -> {
-			for(int x = this.getButWorld().getMinLocation().getBlockX(); x < this.getButWorld().getMaxLocation().getBlockX(); x+=7)
+			for(int x = this.getButWorld().getMinLocation().getBlockX(); x < this.getButWorld().getMaxLocation().getBlockX(); x+= MathUtils.getRandom().nextInt(8))
 			{
-				for(int z = this.getButWorld().getMinLocation().getBlockZ(); z < this.getButWorld().getMaxLocation().getBlockZ(); z+=8)
+				for(int z = this.getButWorld().getMinLocation().getBlockZ(); z < this.getButWorld().getMaxLocation().getBlockZ(); z+= MathUtils.getRandom().nextInt(8))
 				{
 					if(MathUtils.getRandom().nextInt(10) < 8) continue;
 					Block block = this.getButWorld().getWorld().getBlockAt( x, hieghtY, z);

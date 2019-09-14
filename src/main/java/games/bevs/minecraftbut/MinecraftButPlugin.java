@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import games.bevs.minecraftbut.senerario.Senerario;
-import games.bevs.minecraftbut.senerarios.RainingBlocks;
+import games.bevs.minecraftbut.senerarios.EnderDragonAppears;
 import games.bevs.minecraftbut.world.ButWorld;
 
 public class MinecraftButPlugin extends JavaPlugin
@@ -17,7 +17,7 @@ public class MinecraftButPlugin extends JavaPlugin
 	{
 		this.butWorld = new ButWorld(Bukkit.getWorlds().get(0));
 		
-		this.senerario = new RainingBlocks(this.butWorld);
+		this.senerario = new EnderDragonAppears(this.butWorld);
 		this.senerario.start();
 	}
 	
