@@ -1,39 +1,37 @@
 package games.bevs.minecraftbut.senerarios;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.entity.TNTPrimed;
 
 import games.bevs.minecraftbut.senerario.Senerario;
+import games.bevs.minecraftbut.utils.MathUtils;
 import games.bevs.minecraftbut.world.ButWorld;
-import net.md_5.bungee.api.ChatColor;
 
 public class TNTRain extends Senerario
 {
-	private int hieghtY = 50;
+	private int hieghtY = 140;
 	public TNTRain(ButWorld butWorld) 
 	{
-		super("The Lava is rising", butWorld);
+		super("TNT Rain", butWorld);
 	}
 
-	
 	@Override
 	public void onStart()
 	{
 		this.repeat(() -> {
-			for(int x = this.getButWorld().getMinLocation().getBlockX(); x < this.getButWorld().getMaxLocation().getBlockX(); x++)
+			for(int x = this.getButWorld().getMinLocation().getBlockX(); x < this.getButWorld().getMaxLocation().getBlockX(); x+=7)
 			{
-				for(int z = this.getButWorld().getMinLocation().getBlockZ(); z < this.getButWorld().getMaxLocation().getBlockZ(); z++)
+				for(int z = this.getButWorld().getMinLocation().getBlockZ(); z < this.getButWorld().getMaxLocation().getBlockZ(); z+=8)
 				{
+					if(MathUtils.getRandom().nextInt(10) < 8) continue;
 					Block block = this.getButWorld().getWorld().getBlockAt( x, hieghtY, z);
-					if(!block.getType().isSolid())
-						block.setType(Material.STATIONARY_LAVA);
+					block.getLocation().getWorld().spawn(block.getLocation(), TNTPrimed.class);
 					
 				}
 			}
 			
-			hieghtY++;
-			Bukkit.broadcastMessage(ChatColor.BOLD + "Lava has gone up");
+			if(MathUtils.getRandom().nextInt(10) >= 8) 
+				hieghtY--;
 		}, 20l * 5);
 	}
 	
