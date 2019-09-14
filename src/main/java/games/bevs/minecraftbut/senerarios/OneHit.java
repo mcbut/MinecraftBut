@@ -5,24 +5,22 @@ import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.world.ButWorld;
 
-public class NoJump extends Senerario
+public class OneHit extends Senerario
 {
-	public NoJump(ButWorld butWorld) 
+	public OneHit(ButWorld butWorld) 
 	{
-		super("No Jump", butWorld);
+		super("One Hit", butWorld);
 	}
 
-	private void applyNoJump(Player player)
+	private void applyOneHit(Player player)
 	{
 		if(player.getGameMode() == GameMode.SURVIVAL)
 		{
-			player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 20 * 60 * 60, 20 * 20000, false, false));
+			player.setMaxHealth(2);
 		}
 	}
 	
@@ -31,7 +29,7 @@ public class NoJump extends Senerario
 	public void onStart()
 	{
 		Bukkit.getOnlinePlayers().forEach(player -> {
-			applyNoJump(player);
+			applyOneHit(player);
 		});
 	}
 	
@@ -41,7 +39,7 @@ public class NoJump extends Senerario
 		Bukkit.getOnlinePlayers().forEach(player -> {
 			if(player.getGameMode() == GameMode.SURVIVAL)
 			{
-				player.removePotionEffect(PotionEffectType.JUMP);
+				player.setMaxHealth(20);
 			}
 		});
 	}
@@ -50,6 +48,6 @@ public class NoJump extends Senerario
 	public void onJoin(PlayerJoinEvent e)
 	{
 		Player player = e.getPlayer();
-		applyNoJump(player);
+		applyOneHit(player);
 	}
 }
