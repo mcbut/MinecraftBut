@@ -1,7 +1,5 @@
 package games.bevs.minecraftbut.senerarios;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.EnderDragon;
 import org.bukkit.entity.Entity;
@@ -25,8 +23,11 @@ public class EnderDragonAppears extends Senerario
 		Block block = this.getButWorld().getWorld().getBlockAt(0, heightY, 0);
 		
 		this.repeat(() -> {
-			block.getWorld().spawn(block.getLocation(), EnderDragon.class);
-		}, 20l * 60);
+			EnderDragon enderDragon = (EnderDragon) block.getWorld().spawn(block.getLocation(), EnderDragon.class);
+			enderDragon.setCustomName(ChatColor.RED + "" + ChatColor.BOLD + "Subscribe!");
+			enderDragon.setCustomNameVisible(true);
+			
+		}, 20l * 60 * 3);
 	}
 	
 	@Override
