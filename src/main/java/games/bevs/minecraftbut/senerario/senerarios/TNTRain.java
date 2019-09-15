@@ -1,10 +1,11 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.TNTPrimed;
 
+import games.bevs.minecraftbut.commons.utils.MathUtils;
 import games.bevs.minecraftbut.senerario.Senerario;
-import games.bevs.minecraftbut.utils.MathUtils;
 import games.bevs.minecraftbut.world.ButWorld;
 
 public class TNTRain extends Senerario
@@ -12,7 +13,7 @@ public class TNTRain extends Senerario
 	private int hieghtY = 140;
 	public TNTRain(ButWorld butWorld) 
 	{
-		super("TNT Rain", butWorld);
+		super("TNT Rain", butWorld, Material.TNT, new String[] {"TNT will rain from the sky continusly"});
 	}
 
 	@Override

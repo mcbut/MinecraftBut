@@ -1,4 +1,4 @@
-package games.bevs.minecraftbut.utils;
+package games.bevs.minecraftbut.commons.utils;
 
 import java.util.Random;
 

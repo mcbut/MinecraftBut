@@ -1,5 +1,6 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.EnderDragon;
 import org.bukkit.entity.Entity;
@@ -13,7 +14,7 @@ public class EnderDragonAppears extends Senerario
 	private int heightY = 140;
 	public EnderDragonAppears(ButWorld butWorld) 
 	{
-		super("An Enderdragon appears", butWorld);
+		super("An Enderdragon appears", butWorld, Material.DRAGON_EGG, new String[]{ "Every 3 minutes (Or the amount of time you set) an ender dragon will spawn" });
 	}
 
 	

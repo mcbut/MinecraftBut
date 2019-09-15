@@ -1,7 +1,8 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -13,7 +14,7 @@ public class OneHit extends Senerario
 {
 	public OneHit(ButWorld butWorld) 
 	{
-		super("One Hit", butWorld);
+		super("One Hit", butWorld, Material.BONE, new String[] {"You are given only one heart"});
 	}
 
 	private void applyOneHit(Player player)

@@ -1,7 +1,8 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -15,7 +16,7 @@ public class NoJump extends Senerario
 {
 	public NoJump(ButWorld butWorld) 
 	{
-		super("No Jump", butWorld);
+		super("No Jump", butWorld, Material.RABBIT_FOOT, new String[] {"Jumping is disabled"});
 	}
 
 	private void applyNoJump(Player player)

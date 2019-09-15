@@ -1,4 +1,4 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -8,12 +8,12 @@ import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.world.ButWorld;
 import net.md_5.bungee.api.ChatColor;
 
-public class TheWaterRises extends Senerario
+public class TheLavaRises extends Senerario
 {
 	private int hieghtY = 50;
-	public TheWaterRises(ButWorld butWorld) 
+	public TheLavaRises(ButWorld butWorld) 
 	{
-		super("The Water is rising", butWorld);
+		super("The Lava is rising", butWorld, Material.LAVA_BUCKET, new String[] {"Every minute (or the amount of time you set) the lava level will riase"});
 	}
 
 	
@@ -27,7 +27,7 @@ public class TheWaterRises extends Senerario
 				{
 					Block block = this.getButWorld().getWorld().getBlockAt( x, hieghtY, z);
 					if(!block.getType().isSolid())
-						block.setType(Material.STATIONARY_WATER);
+						block.setType(Material.STATIONARY_LAVA);
 					
 				}
 			}

@@ -1,11 +1,11 @@
-package games.bevs.minecraftbut.senerarios;
+package games.bevs.minecraftbut.senerario.senerarios;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.FallingBlock;
 
+import games.bevs.minecraftbut.commons.utils.MathUtils;
 import games.bevs.minecraftbut.senerario.Senerario;
-import games.bevs.minecraftbut.utils.MathUtils;
 import games.bevs.minecraftbut.world.ButWorld;
 
 public class RainingBlocks extends Senerario
@@ -16,7 +16,7 @@ public class RainingBlocks extends Senerario
 	
 	public RainingBlocks(ButWorld butWorld) 
 	{
-		super("Raining Blocks", butWorld);
+		super("Raining Blocks", butWorld, Material.COMMAND, new String[] {"Random blocks will fall from the sky"} );
 	}
 
 	@SuppressWarnings("deprecation")
