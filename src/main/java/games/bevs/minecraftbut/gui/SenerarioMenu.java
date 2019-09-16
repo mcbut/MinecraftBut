@@ -19,8 +19,12 @@ public class SenerarioMenu extends Menu
 		super(title, 9 * 6);
 		
 		//draw all senerarios
+		
+		this.drawSenerarios();
 	}
 
+	
+	
 	protected void drawSenerarios()
 	{
 		Iterator<Senerario> senerarios = MinecraftButPlugin.getPlugin().getScenerarioManager().getSenerarios().values().iterator();
@@ -39,18 +43,20 @@ public class SenerarioMenu extends Menu
 	{
 		this.setIcon(slot,
 					 new ItemStackBuilder(senerario.getIcon())
-					 	 .displayName(CC.b + senerario.getName())
+					 	 .displayName(CC.b + (senerario.isEnabled() ? CC.green : CC.red) + senerario.getName())
 					 	 .lore(senerario.getDescription()),
 					 (player) -> {
 						 if(senerario.isEnabled())
 						 {
 							 senerario.finish();
 							 Bukkit.broadcastMessage(CC.iGray + "[MinecraftBut]'" + senerario.getName() + "' has been Disabled");
+							 this.drawSenerario(slot, senerario);
 						 }
 						 else
 						 {
 							 senerario.start();
 							 Bukkit.broadcastMessage(CC.iGray + "[MinecraftBut] '" + senerario.getName() + "' has been Enabled");
+							 this.drawSenerario(slot, senerario);
 						 }
 						 
 					 });
