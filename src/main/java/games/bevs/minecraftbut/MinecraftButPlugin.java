@@ -1,8 +1,12 @@
 package games.bevs.minecraftbut;
 
+import java.lang.reflect.Field;
+
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import games.bevs.minecraftbut.commands.MinecraftButCommand;
 import games.bevs.minecraftbut.senerario.ScenerarioManager;
 import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
@@ -30,6 +34,8 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager = new ScenerarioManager();
 		
 		this.populateScenerarios(this.butWorld);
+		
+		this.registerCommands();
 	}
 	
 	@Override
@@ -52,5 +58,40 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new TheLavaRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TheWaterRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTRain(butWorld));
+	}
+	
+	private CommandMap getCommandMap()
+	{
+		try{
+		    Field commandMapField = Bukkit.getServer().getClass().getDeclaredField("commandMap");
+		    commandMapField.setAccessible(true);
+		    return (CommandMap) commandMapField.get(Bukkit.getServer());
+		}
+		catch(Exception exception){
+		    exception.printStackTrace();
+		}
+		 
+		return null;
+	}
+	
+	private void registerCommands()
+	{
+		CommandMap commandMap = this.getCommandMap();
+		if(commandMap == null)
+		{
+			for(int i = 0; i < 20; i++)
+				Bukkit.broadcastMessage("");
+			
+			for(int i = 0; i < 20; i++)
+			{
+				Bukkit.broadcastMessage(" FUCK, I can't get access to the commandMap");
+				Bukkit.broadcastMessage("");
+				Bukkit.broadcastMessage("");
+			}
+			return;
+		}
+		 
+		MinecraftButCommand minecraftButCMD = new MinecraftButCommand();
+		commandMap.register(minecraftButCMD.getName(), minecraftButCMD);
 	}
 }		
