@@ -23,7 +23,6 @@ import lombok.Getter;
 public class MinecraftButPlugin extends JavaPlugin
 {
 	private ButWorld butWorld;
-	private Senerario senerario;
 	private ScenerarioManager scenerarioManager;
 	
 	@Override
@@ -41,7 +40,6 @@ public class MinecraftButPlugin extends JavaPlugin
 	@Override
 	public void onDisable()
 	{
-		this.senerario.finish();
 	}
 	
 	public static MinecraftButPlugin getPlugin()
