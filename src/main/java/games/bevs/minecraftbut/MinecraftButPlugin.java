@@ -89,7 +89,7 @@ public class MinecraftButPlugin extends JavaPlugin
 			return;
 		}
 		 
-		MinecraftButCommand minecraftButCMD = new MinecraftButCommand();
+		MinecraftButCommand minecraftButCMD = new MinecraftButCommand(this.scenerarioManager);
 		commandMap.register(minecraftButCMD.getName(), minecraftButCMD);
 	}
 }		

@@ -1,6 +1,8 @@
 package games.bevs.minecraftbut.commons.utils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
@@ -69,6 +71,16 @@ public class ItemStackBuilder {
 	public ItemStackBuilder lore(String... lore) {
 		ItemMeta itemMeta = build().getItemMeta();
 		itemMeta.setLore(Arrays.asList(lore));
+		build().setItemMeta(itemMeta);
+		return this;
+	}
+	
+	public ItemStackBuilder addLore(String lore)
+	{
+		ItemMeta itemMeta = build().getItemMeta();
+		List<String> newLore = new ArrayList<String>(itemMeta.getLore());
+		newLore.add(lore);
+		itemMeta.setLore(newLore);
 		build().setItemMeta(itemMeta);
 		return this;
 	}

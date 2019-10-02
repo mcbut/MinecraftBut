@@ -12,7 +12,7 @@ public class ButWorld
 {
 	@Getter
 	private World world;
-	private int size = 100;
+	private int size = 150;
 	
 	@Getter
 	private Location minLocation,

@@ -16,11 +16,11 @@ public class ScenerarioManager
 	
 	public void registerSenerario(Senerario senerario)
 	{
-		this.senerarios.put(senerario.getName().toLowerCase(), senerario);
+		this.senerarios.put(senerario.getId().toLowerCase(), senerario);
 	}
 	
 	public Senerario getSenerario(String name)
 	{
-		return this.getSenerarios().get(name);
+		return this.getSenerarios().get(name.toLowerCase());
 	}
 }

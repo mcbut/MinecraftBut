@@ -44,18 +44,17 @@ public class SenerarioMenu extends Menu
 		this.setIcon(slot,
 					 new ItemStackBuilder(senerario.getIcon())
 					 	 .displayName(CC.b + (senerario.isEnabled() ? CC.green : CC.red) + senerario.getName())
-					 	 .lore(senerario.getDescription()),
+					 	 .lore(senerario.getDescription())
+					 	 .addLore(CC.gray + "Id: " + senerario.getId()),
 					 (player) -> {
 						 if(senerario.isEnabled())
 						 {
 							 senerario.finish();
-							 Bukkit.broadcastMessage(CC.iGray + "[MinecraftBut]'" + senerario.getName() + "' has been Disabled");
 							 this.drawSenerario(slot, senerario);
 						 }
 						 else
 						 {
 							 senerario.start();
-							 Bukkit.broadcastMessage(CC.iGray + "[MinecraftBut] '" + senerario.getName() + "' has been Enabled");
 							 this.drawSenerario(slot, senerario);
 						 }
 						 
