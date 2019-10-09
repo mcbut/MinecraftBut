@@ -15,3 +15,6 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 * No Jumping
 * Dragon spawns
 * One heart
+
+## Download
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.1)
