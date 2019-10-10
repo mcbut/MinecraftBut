@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import games.bevs.minecraftbut.commands.MinecraftButCommand;
 import games.bevs.minecraftbut.senerario.ScenerarioManager;
-import games.bevs.minecraftbut.senerario.Senerario;
+import games.bevs.minecraftbut.senerario.senerarios.BedRockTrail;
 import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
 import games.bevs.minecraftbut.senerario.senerarios.NoJump;
 import games.bevs.minecraftbut.senerario.senerarios.OneHit;
@@ -56,6 +56,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new TheLavaRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TheWaterRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTRain(butWorld));
+		this.scenerarioManager.registerSenerario(new BedRockTrail(butWorld));
 	}
 	
 	private CommandMap getCommandMap()

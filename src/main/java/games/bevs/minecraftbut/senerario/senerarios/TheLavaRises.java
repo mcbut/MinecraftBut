@@ -7,6 +7,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 import games.bevs.minecraftbut.commons.Console;
+import games.bevs.minecraftbut.commons.XMaterial;
 import games.bevs.minecraftbut.commons.utils.CC;
 import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.world.ButWorld;
@@ -16,6 +17,12 @@ public class TheLavaRises extends Senerario
 {
 	private int hieghtY = 173;
 	private long lavaSpeed = 45l;
+	
+	private Material lavaMaterial = XMaterial.LAVA.parseMaterial();
+	private Material signMaterial = XMaterial.SIGN.parseMaterial();
+	private Material signWallMaterial = XMaterial.WALL_SIGN.parseMaterial();
+	private Material surgarCaneMaterial = XMaterial.SUGAR_CANE.parseMaterial();
+	
 	public TheLavaRises(ButWorld butWorld) 
 	{
 		super("The Lava is rising", butWorld, Material.LAVA_BUCKET, new String[] {"Every minute (or the amount of time you set) the lava level will riase"});
@@ -100,9 +107,9 @@ public class TheLavaRises extends Senerario
 			{
 				Block block = this.getButWorld().getWorld().getBlockAt( x, hieghtY, z);
 				if(!block.getType().isSolid())
-					block.setType(Material.STATIONARY_LAVA);
-				else if(block.getType() == Material.SIGN_POST || block.getType() == Material.WALL_SIGN || block.getType() == Material.LADDER || block.getType() == Material.SUGAR_CANE_BLOCK)
-					block.setType(Material.STATIONARY_LAVA);
+					block.setType(lavaMaterial);
+				else if(block.getType() == signMaterial || block.getType() == signWallMaterial || block.getType() == Material.LADDER || block.getType() == surgarCaneMaterial)
+					block.setType(lavaMaterial);
 			}
 		}
 		

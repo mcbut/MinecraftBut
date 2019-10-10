@@ -3,7 +3,6 @@ package games.bevs.minecraftbut.commons.gui;
 import java.util.HashMap;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,14 +10,16 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 
+import games.bevs.minecraftbut.commons.Sounds;
 import games.bevs.minecraftbut.commons.utils.Callback;
+import games.bevs.minecraftbut.commons.utils.InventoryUtils;
 import games.bevs.minecraftbut.commons.utils.ItemStackBuilder;
 import lombok.Getter;
 
 @Getter
 public class Menu implements Listener
 {
-	private static final Sound SUCCESSFUL_CLICK_SOUND = Sound.CLICK;
+	private static final Sounds SUCCESSFUL_CLICK_SOUND = Sounds.CLICK;
 	
 	private HashMap<Integer, MenuIcon> icons = new HashMap<>();
 	private String title;
@@ -70,31 +71,17 @@ public class Menu implements Listener
 		
 		if(inv == null) 
 			return;
-		
-		if(!inv.getTitle().equalsIgnoreCase(title))
+		if(!e.getView().getTitle().equalsIgnoreCase(title))
 			return;
 		MenuIcon icon = this.getIcons().get(slot);
 		
 		if(icon != null)
 		{
 			icon.getRunnable().run(player);
-			player.playSound(player.getLocation(), SUCCESSFUL_CLICK_SOUND, 1f, 1f);
+			player.playSound(player.getLocation(), SUCCESSFUL_CLICK_SOUND.bukkitSound(), 1f, 1f);
 		}
 		
 		e.setCancelled(true);
-	}
-	
-	@EventHandler
-	public void onInvClose(InventoryCloseEvent e)
-	{
-		if(!inv.getTitle().equalsIgnoreCase(title))
-			return;
-		//Lets have a mermory leak idc
-//		inv.getViewers().forEach(player -> {
-//			if(e.getPlayer() != player) 
-//				player.closeInventory();
-//		});
-//		PluginUtils.unregisterListener(this);
 	}
 	
 	public void open(Player player)
