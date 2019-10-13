@@ -19,7 +19,7 @@ public class LapisGem extends GemBase
 	
 	public LapisGem() 
 	{
-		super(Material.LAPIS_ORE, 1);
+		super(Material.INK_SACK, (short) 4, 1);
 	}
 
 	@Override

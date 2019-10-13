@@ -16,8 +16,8 @@ public class CoalGem extends GemBase
 	@Override
 	public void onEat(Player player) 
 	{
-		player.addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 20 * 10, 1, true, true), true);
-		player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 20 * 4, 1, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 20 * 10, 0, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.CONFUSION, 20 * 4, 0, true, true), true);
 	}
 
 }

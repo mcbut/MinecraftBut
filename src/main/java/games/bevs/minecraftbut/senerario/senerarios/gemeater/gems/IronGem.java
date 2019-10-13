@@ -16,7 +16,7 @@ public class IronGem extends GemBase
 	@Override
 	public void onEat(Player player) 
 	{
-		player.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 20 * 60, 1, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 20 * 60, 0, true, true), true);
 	}
 
 }

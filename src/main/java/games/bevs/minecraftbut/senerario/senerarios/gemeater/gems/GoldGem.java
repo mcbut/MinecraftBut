@@ -16,7 +16,7 @@ public class GoldGem extends GemBase
 	@Override
 	public void onEat(Player player) 
 	{
-		player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 20 * 5, 1, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 20 * 5, 0, true, true), true);
 	}
 
 }

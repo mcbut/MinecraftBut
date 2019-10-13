@@ -1,6 +1,6 @@
 package games.bevs.minecraftbut.senerario.senerarios.gemeater;
 
-import org.apache.commons.lang3.math.NumberUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,6 +15,7 @@ import games.bevs.minecraftbut.commons.utils.CC;
 import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.CoalGem;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.DiamondGem;
+import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.EmeraldGem;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.GemBase;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.GoldGem;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.IronGem;
@@ -39,6 +40,7 @@ public class GemEater extends Senerario
 		this.gemManager.registerGem(new LapisGem());
 		this.gemManager.registerGem(new RedstoneGem());
 		this.gemManager.registerGem(new DiamondGem());
+		this.gemManager.registerGem(new EmeraldGem());
 	}
 
 	
@@ -110,7 +112,13 @@ public class GemEater extends Senerario
 		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK)
 		{
 			GemBase gem = this.gemManager.getGem(item.getType());
-			player.setFoodLevel(Math.max(playerFoodLevel + gem.getHungerRefill(), 20));
+			if(gem == null) return;
+			if(item.getDurability() != 0)
+			{
+				if(gem.getData() != item.getDurability())
+					return;
+			}
+			player.setFoodLevel(Math.min(playerFoodLevel + gem.getHungerRefill(), 20));
 			
 			player.playSound(player.getLocation(), Sounds.BURP.bukkitSound(), 10, 1);
 			//remove item

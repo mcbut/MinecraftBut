@@ -16,7 +16,7 @@ public class DiamondGem extends GemBase
 	@Override
 	public void onEat(Player player) 
 	{
-		player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 20 * 10, 2, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 20 * 10, 1, true, true), true);
 	}
 
 }

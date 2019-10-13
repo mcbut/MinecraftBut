@@ -16,7 +16,7 @@ public class RedstoneGem extends GemBase
 	@Override
 	public void onEat(Player player) 
 	{
-		player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20 * 10, 1, true, true), true);
+		player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 20 * 10, 0, true, true), true);
 	}
 
 }
