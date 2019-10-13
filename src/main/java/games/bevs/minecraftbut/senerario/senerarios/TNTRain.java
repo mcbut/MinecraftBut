@@ -26,13 +26,15 @@ public class TNTRain extends Senerario
 				for(int z = this.getButWorld().getMinLocation().getBlockZ(); z < this.getButWorld().getMaxLocation().getBlockZ(); z+= (MathUtils.getRandom().nextInt(10) + 1))
 				{
 					if(MathUtils.getRandom().nextInt(10) < 8) continue;
-					Block block = this.getButWorld().getWorld().getBlockAt( x, hieghtY, z);
+					int highest = this.getButWorld().getWorld().getHighestBlockYAt(x, z);
+					int y = highest + 40;
+					Block block = this.getButWorld().getWorld().getBlockAt( x, y, z);
 					block.getLocation().getWorld().spawn(block.getLocation(), TNTPrimed.class);
 					
 				}
 			}
 			
-			if(MathUtils.getRandom().nextInt(10) >= 8) 
+			if(MathUtils.getRandom().nextInt(10) >= 7) 
 				hieghtY--;
 		}, 20l * 60);
 	}
