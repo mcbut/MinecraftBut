@@ -25,9 +25,17 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 ## Commands
 ```
 /MinecraftBut
+```
+Open's the Menu to enable and disable Senerarios
+```
 /MinecraftBut Senerario <senerarioId> help
+```
+learn ways that you can configure a Senerario
+
+```
 /MinecraftBut Senerario <senerarioId> <Args>
 ```
+Configure a Senerario
 Note: senerarioId can be found in the lore of the item in the menu
 
 ## Download
