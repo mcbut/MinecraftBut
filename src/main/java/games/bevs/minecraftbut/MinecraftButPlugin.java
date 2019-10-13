@@ -16,6 +16,7 @@ import games.bevs.minecraftbut.senerario.senerarios.RainingBlocks;
 import games.bevs.minecraftbut.senerario.senerarios.TNTRain;
 import games.bevs.minecraftbut.senerario.senerarios.TheLavaRises;
 import games.bevs.minecraftbut.senerario.senerarios.TheWaterRises;
+import games.bevs.minecraftbut.senerario.senerarios.gemeater.GemEater;
 import games.bevs.minecraftbut.world.ButWorld;
 import lombok.Getter;
 
@@ -57,6 +58,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new TheWaterRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTRain(butWorld));
 		this.scenerarioManager.registerSenerario(new BedRockTrail(butWorld));
+		this.scenerarioManager.registerSenerario(new GemEater(butWorld));
 	}
 	
 	private CommandMap getCommandMap()
