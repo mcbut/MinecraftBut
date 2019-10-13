@@ -39,4 +39,4 @@ Configure a Senerario
 Note: senerarioId can be found in the lore of the item in the menu
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.1)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.2)
