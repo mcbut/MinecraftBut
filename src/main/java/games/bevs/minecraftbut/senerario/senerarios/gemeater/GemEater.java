@@ -1,5 +1,6 @@
 package games.bevs.minecraftbut.senerario.senerarios.gemeater;
 
+import org.apache.commons.lang3.math.NumberUtils;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -8,7 +9,9 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.inventory.ItemStack;
 
+import games.bevs.minecraftbut.commons.Console;
 import games.bevs.minecraftbut.commons.Sounds;
+import games.bevs.minecraftbut.commons.utils.CC;
 import games.bevs.minecraftbut.senerario.Senerario;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.CoalGem;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.gems.DiamondGem;
@@ -22,6 +25,7 @@ import games.bevs.minecraftbut.world.ButWorld;
 public class GemEater extends Senerario
 {	
 	private GemManager gemManager;
+	private boolean specialGems = true;
 	
 	public GemEater(ButWorld butWorld) 
 	{
@@ -48,6 +52,41 @@ public class GemEater extends Senerario
 	public void onFinish()
 	{
 		
+	}
+	
+	@Override
+	protected void onCommand(Player player, String option, String[] args)
+	{
+		super.onCommand(player, option, args);
+		
+		if(args.length != 1)
+		{
+			this.onHelp(player);
+			player.sendMessage(CC.red + "incorrect number of args");
+		}
+		
+		String firstArg = args[0];
+		boolean isTrue = false;
+		
+		if(firstArg.equalsIgnoreCase("true") 
+				|| firstArg.equalsIgnoreCase("on")
+				|| firstArg.equalsIgnoreCase("yes"))
+			isTrue = true;
+		
+		if(option.equalsIgnoreCase("specialGems"))
+		{
+			this.specialGems = isTrue;
+			Console.log("Special gems are " + isTrue);
+		}
+		
+	}
+	
+	@Override
+	protected void onHelp(Player player)
+	{
+		super.onHelp(player);
+		
+		player.sendMessage(withBaseCommand("specialGems", "<True|False>"));
 	}
 	
 	
@@ -82,7 +121,8 @@ public class GemEater extends Senerario
 				item = null;
 			
 			player.setItemInHand(item);
-			gem.onEat(player);
+			if(specialGems)
+				gem.onEat(player);
 			
 			e.setCancelled(true);
 		}
