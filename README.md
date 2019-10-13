@@ -44,5 +44,6 @@ Note: senerarioId can be found in the lore of the item in the menu
 
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin. 
-So it would be dope if I made something back from it
+So it would be dope if I made something back from it  
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)
