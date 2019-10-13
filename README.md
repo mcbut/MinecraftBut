@@ -2,6 +2,9 @@
 A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
 The youtubers will spawn in a small world with the option to apply multiple different senerarios
 
+## Versions
+Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of bugginess
+
 ## Videos
 [Skeppy's video, Lava is rising - 462,081 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
 [Skeppy's video, Water is rising - 273,000 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
@@ -18,6 +21,14 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 * One heart
 * Bedrock Trail
 * Gem Eater (Ore Eater)
+
+## Commands
+```
+/MinecraftBut
+/MinecraftBut Senerario <senerarioId> help
+/MinecraftBut Senerario <senerarioId> <Args>
+```
+Note: senerarioId can be found in the lore of the item in the menu
 
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.1)
