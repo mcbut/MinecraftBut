@@ -104,7 +104,7 @@ public class GemEater extends Senerario
 		Player player = e.getPlayer();
 		int playerFoodLevel = player.getFoodLevel();
 		
-		ItemStack item = e.getItem();
+		ItemStack item = player.getItemInHand();
 		
 		if(item == null || item.getType() == Material.AIR)
 			return;
