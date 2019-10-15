@@ -23,7 +23,7 @@ public class WorldDecay extends Senerario
 	
 	public WorldDecay(ButWorld butWorld) 
 	{
-		super("The Lava is rising", butWorld, Material.BRICK, new String[] {"Every minute (or the amount of time you set) the lava level will riase"});
+		super("World Decay", butWorld, Material.BRICK, new String[] {"Every block the sun touches slowly breaks down"});
 	}
 
 	
