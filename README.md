@@ -52,41 +52,38 @@ Note: senerarioId can be found in the lore of the item in the menu
 ### Add a Senerario
 Simply extend Senerario, like so
 ```
-public class DummyExample extends Senerario
-{
-  //This allows players to edit the field through the command 
-  //'/mb s DummyExample someNumberToEdit 1' which sets the value to 1
-  @Optional
-  private int someNumberToEdit = 5;
+public class DummyExample extends Senerario {
+ //This allows players to edit the field through the command 
+ //'/mb s DummyExample someNumberToEdit 1' which sets the value to 1
+ @Optional
+ private int someNumberToEdit = 5;
 
-  public DummyExample(ButWorld butWorld) 
-	{
-		super("Dummy Name", butWorld, XMaterial.ANVIL.parseMaterial(), new String[] {"This is a description of the senerario"} );
-	}
-  
-  //called when Senerario is enabled
-  @Override
-	public void onStart()
-	{
-    //If you have a repeating task, I guess using repeat(runnable, ticks)
-    //which auto cancels on disabl
-    this.repeat(() -> {}, 20l * 1);
-  }
-  
-  //called when Senerario is disalbed
-  @Override
-	public void onFinish()
-	{
-		
-	}
-  
-  //Registers when the Senerario is enabled
-  @EventHandler
-  public void onPlayerMove(PlayerMoveEvent e)
-  {
-    Player player = e.getPlayer();
-    player.sendMessage("Hey " + someNumberToEdit);
-  }
+ public DummyExample(ButWorld butWorld) {
+  super("Dummy Name", butWorld, XMaterial.ANVIL.parseMaterial(), new String[] {
+   "This is a description of the senerario"
+  });
+ }
+
+ //called when Senerario is enabled
+ @Override
+ public void onStart() {
+  //If you have a repeating task, I guess using repeat(runnable, ticks)
+  //which auto cancels on disabl
+  this.repeat(() -> {}, 20 l * 1);
+ }
+
+ //called when Senerario is disalbed
+ @Override
+ public void onFinish() {
+
+ }
+
+ //Registers when the Senerario is enabled
+ @EventHandler
+ public void onPlayerMove(PlayerMoveEvent e) {
+  Player player = e.getPlayer();
+  player.sendMessage("Hey " + someNumberToEdit);
+ }
 }
 ```
 
