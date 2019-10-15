@@ -43,6 +43,9 @@ public class TNTOnSelf extends Senerario
 				if(player.getGameMode() != GameMode.SURVIVAL)
 					continue;
 				
+				if(player.isDead())
+					continue;
+				
 				if(location.getBlockY() < this.triggerBelow)
 					player.getWorld().spawn(location, TNTPrimed.class);
 			}
