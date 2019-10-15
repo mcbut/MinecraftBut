@@ -31,6 +31,12 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 /MinecraftBut
 ```
 Open's the Menu to enable and disable Senerarios
+
+```
+/MinecraftBut help
+```
+help for top level command
+
 ```
 /MinecraftBut Senerario <senerarioId> help
 ```
@@ -42,8 +48,62 @@ learn ways that you can configure a Senerario
 Configure a Senerario
 Note: senerarioId can be found in the lore of the item in the menu
 
+## Developers
+### Add a Senerario
+Simply extend Senerario, like so
+```
+public class DummyExample extends Senerario
+{
+  //This allows players to edit the field through the command 
+  //'/mb s DummyExample someNumberToEdit 1' which sets the value to 1
+  @Optional
+  private int someNumberToEdit = 5;
+
+  public DummyExample(ButWorld butWorld) 
+	{
+		super("Dummy Name", butWorld, XMaterial.ANVIL.parseMaterial(), new String[] {"This is a description of the senerario"} );
+	}
+  
+  //called when Senerario is enabled
+  @Override
+	public void onStart()
+	{
+    //If you have a repeating task, I guess using repeat(runnable, ticks)
+    //which auto cancels on disabl
+    this.repeat(() -> {}, 20l * 1);
+  }
+  
+  //called when Senerario is disalbed
+  @Override
+	public void onFinish()
+	{
+		
+	}
+  
+  //Registers when the Senerario is enabled
+  @EventHandler
+  public void onPlayerMove(PlayerMoveEvent e)
+  {
+    Player player = e.getPlayer();
+    player.sendMessage("Hey " + someNumberToEdit);
+  }
+}
+```
+
+Then simply go to the games.bevs.minecraftbut.MinecraftButPlugin class
+```
+// and add the following line in games.bevs.minecraftbut.MinecraftButPlugin
+private void populateScenerarios(ButWorld butWorld)
+{
+  ...
+  this.scenerarioManager.registerSenerario(new DummyExample(butWorld));
+}
+```
+
+
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.2)
+
 
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin. 
