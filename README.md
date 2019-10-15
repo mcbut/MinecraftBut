@@ -25,6 +25,7 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 * TNT Spawn on Self - Tnt will spawn on you every so often
 * Anvil Rain - Anvil falls from the sky
 * Death Out - Set into spectator when you die (or kick when you die)
+* World Decay - Every  block the sun touches slowly breaks down
 
 ## Commands
 ```
