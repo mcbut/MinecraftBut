@@ -23,7 +23,8 @@ public class BedRockTrail extends Senerario
 {
 	private HashMap<UUID, Location> lastLocation = new HashMap<>();
 	
-	private double speed = 0.2;
+	
+	private double bedrockCheckSpeed = 0.2;
 	public BedRockTrail(ButWorld butWorld) 
 	{
 		super("Bedrock Trail", butWorld, Material.BEDROCK, new String[] {"Where ever you move, you leave a bedrock trail"});
@@ -40,52 +41,6 @@ public class BedRockTrail extends Senerario
 	public void onFinish()
 	{
 		
-	}
-	
-	@Override
-	protected void onCommand(Player player, String option, String[] args)
-	{
-		super.onCommand(player, option, args);
-		
-		if(args.length != 1)
-		{
-			this.onHelp(player);
-			player.sendMessage(CC.red + "incorrect number of args");
-		}
-		
-		String firstArg = args[0];
-		int argAsInt = 0;
-		if(NumberUtils.isNumber(firstArg))
-		{
-			argAsInt = Integer.parseInt(firstArg);
-		}
-		else
-		{
-			this.onHelp(player);
-			player.sendMessage(CC.red + "Must be a number");
-			return;
-		}
-		
-		
-		if(option.equalsIgnoreCase("speed"))
-		{
-			this.speed = argAsInt;
-			if(this.isEnabled())
-			{
-				this.finish();
-				this.start();
-			}
-			Console.log("Bedrock check speed set to " + argAsInt);
-			
-		}
-	}
-	
-	@Override
-	protected void onHelp(Player player)
-	{
-		super.onHelp(player);
-		
-		player.sendMessage(withBaseCommand("speed", "<Seconds (number)>"));
 	}
 	
 	@EventHandler

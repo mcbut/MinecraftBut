@@ -13,6 +13,7 @@ import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
 import games.bevs.minecraftbut.senerario.senerarios.NoJump;
 import games.bevs.minecraftbut.senerario.senerarios.OneHit;
 import games.bevs.minecraftbut.senerario.senerarios.RainingBlocks;
+import games.bevs.minecraftbut.senerario.senerarios.TNTOnSelf;
 import games.bevs.minecraftbut.senerario.senerarios.TNTRain;
 import games.bevs.minecraftbut.senerario.senerarios.TheLavaRises;
 import games.bevs.minecraftbut.senerario.senerarios.TheWaterRises;
@@ -58,6 +59,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new TheWaterRises(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTRain(butWorld));
 		this.scenerarioManager.registerSenerario(new BedRockTrail(butWorld));
+		this.scenerarioManager.registerSenerario(new TNTOnSelf(butWorld));
 		this.scenerarioManager.registerSenerario(new GemEater(butWorld));
 	}
 	

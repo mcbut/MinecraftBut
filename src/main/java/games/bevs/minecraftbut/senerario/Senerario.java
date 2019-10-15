@@ -1,5 +1,6 @@
 package games.bevs.minecraftbut.senerario;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,13 +14,16 @@ import org.bukkit.event.Listener;
 import games.bevs.minecraftbut.MinecraftButPlugin;
 import games.bevs.minecraftbut.commons.Console;
 import games.bevs.minecraftbut.commons.utils.CC;
+import games.bevs.minecraftbut.senerario.options.Optional;
 import games.bevs.minecraftbut.world.ButWorld;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
+@NoArgsConstructor
 public class Senerario implements Listener
 {
 	private @NonNull String name;
@@ -135,7 +139,55 @@ public class Senerario implements Listener
 			return;
 		}
 		
+		Bukkit.broadcastMessage("args " + args.length);
 		
+		String fieldName = option;
+		String value = args[0];
+		if(args.length > 1)
+		{
+			for(int i = 1; i < args.length; i++)
+			{
+				value += " " + args[i];
+			}
+		}
+		
+		Bukkit.broadcastMessage("value " + value);
+		
+		boolean success = false;
+		
+		Optional optional = this.getOptional(this, fieldName);
+		if(optional == null)
+		{
+			player.sendMessage(CC.red + "Could not find '" + fieldName + "'!" );
+			this.onHelp(player);
+			return;
+		}
+		
+		try {
+			if(editOptionalField(this, fieldName, value))
+				success = true;
+		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+			e.printStackTrace();
+		}
+		
+		if(success)
+		{
+			String message = CC.red + "Failed really bad, try hit up Sprock on Discord @ Heath#5377";
+			if(optional != null)
+			{
+				message = optional.successMessage();
+				if(message.length() < 3)
+					message = Optional.SUCCESS_MESSAGE;
+				
+				message = message.replaceAll("%name%", fieldName);
+				message = message.replaceAll("%value%", "'" + value + "'");
+			}
+			player.sendMessage(message);
+		}
+		else
+		{
+			player.sendMessage(CC.red + "Something went wrong, incorrect type? int? true|false?");
+		}
 	}
 	
 	protected String withBaseCommand(String option, String args)
@@ -143,8 +195,88 @@ public class Senerario implements Listener
 		return CC.red + "/MinecraftBut Senerario " + this.getId() + " "+ option + " " + args;
 	}
 	
+	protected String withBaseCommand(String option, Class<?> clazz)
+	{
+		String args = "";
+		if(clazz == String.class)
+			args = "<Message>";
+		else if(clazz == boolean.class)
+			args = "<true|false>";
+		else if(clazz == int.class)
+			args = "<Number (1, 2, 3...)>";
+		return CC.red + "/MinecraftBut Senerario " + this.getId() + " "+ option + " " + args;
+	}
+	
 	protected void onHelp(Player player)
 	{
 		player.sendMessage(withBaseCommand("status", "<Enable|Disable>"));
+		for(Field optionField : this.getOptionalFields())
+			player.sendMessage(withBaseCommand(optionField.getName(), optionField.getType()));
+	}
+	
+	public List<Field> getOptionalFields()
+	{
+		List<Field> fields = new ArrayList<>();
+		for(Field field : this.getClass().getDeclaredFields())
+		{
+			Optional optional = field.getAnnotation(Optional.class);
+			if(optional == null) continue;
+			fields.add(field);
+		}
+		return fields;
+	}
+	
+	/**
+	 * Not the best method of doing this but it's good enough for this use case
+	 * @param senerario
+	 * @param variableName
+	 * @param value
+	 * @throws IllegalArgumentException
+	 * @throws IllegalAccessException
+	 * @throws NoSuchFieldException
+	 * @throws SecurityException
+	 * @return successful
+	 */
+	public boolean editOptionalField(Senerario senerario, String variableName, String value) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException
+	{
+		Field field = senerario.getClass().getDeclaredField(variableName);
+		Optional optional = field.getAnnotation(Optional.class);
+		if(optional == null)
+			return false;
+		
+		field.setAccessible(true);
+		
+		if(field.getType() == String.class)
+		{
+			field.set(senerario, value);
+			return true;
+		}
+		else if(field.getType() == int.class)
+		{
+			int valueAsInt = Integer.parseInt(value);
+			field.set(senerario, valueAsInt);
+			return true;
+		}
+		else if(field.getType() == boolean.class)
+		{
+			boolean valueAsBoolean = Boolean.parseBoolean(value.toLowerCase());
+			field.set(senerario, valueAsBoolean);
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public Optional getOptional(Senerario senerario, String fieldName)
+	{
+		Field field;
+		Optional optional = null;
+		try {
+			field = senerario.getClass().getDeclaredField(fieldName);
+			optional = field.getAnnotation(Optional.class);
+		} catch (NoSuchFieldException | SecurityException e) {
+//			e.printStackTrace();//ssssshhh i know baby
+		}
+		return optional;
 	}
 }
