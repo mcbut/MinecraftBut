@@ -188,6 +188,10 @@ public class Senerario implements Listener
 				player.sendMessage(CC.red + "Something went wrong, incorrect type? int? true|false?");
 			}
 		}
+		else
+		{
+			this.onHelp(player);
+		}
 	}
 	
 	protected String withBaseCommand(String option, String args)
