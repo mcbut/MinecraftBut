@@ -7,6 +7,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import games.bevs.minecraftbut.commons.XMaterial;
 import games.bevs.minecraftbut.commons.utils.MathUtils;
 
 /**
@@ -19,7 +20,7 @@ public class LapisGem extends GemBase
 	
 	public LapisGem() 
 	{
-		super(Material.INK_SACK, (short) 4, 1);
+		super(XMaterial.INK_SAC.parseMaterial(), (short) 4, 1);
 	}
 
 	@Override

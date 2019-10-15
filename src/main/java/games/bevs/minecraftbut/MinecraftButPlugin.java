@@ -53,6 +53,8 @@ public class MinecraftButPlugin extends JavaPlugin
 	
 	private void populateScenerarios(ButWorld butWorld)
 	{
+		boolean minecraft18 = Bukkit.getServer().getClass().getPackage().toString().contains("1.8");
+		
 		this.scenerarioManager.registerSenerario(new EnderDragonAppears(butWorld));
 		this.scenerarioManager.registerSenerario(new NoJump(butWorld));
 		this.scenerarioManager.registerSenerario(new OneHit(butWorld));
@@ -63,8 +65,9 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new BedRockTrail(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTOnSelf(butWorld));
 		this.scenerarioManager.registerSenerario(new GemEater(butWorld));
-		this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
 		this.scenerarioManager.registerSenerario(new DeathOut(butWorld));
+		if(minecraft18)
+			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
 	}
 	
 	private CommandMap getCommandMap()

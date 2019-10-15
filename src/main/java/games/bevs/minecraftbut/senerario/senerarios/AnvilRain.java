@@ -10,6 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
+import games.bevs.minecraftbut.commons.FallingBlockUtils;
 import games.bevs.minecraftbut.commons.XMaterial;
 import games.bevs.minecraftbut.commons.utils.MathUtils;
 import games.bevs.minecraftbut.senerario.Senerario;
@@ -56,7 +57,7 @@ public class AnvilRain extends Senerario {
 		if (e.getEntityType() == EntityType.FALLING_BLOCK)
 		{
 			FallingBlock fallingBlock = (FallingBlock) e.getEntity();
-			if(fallingBlock.getBlockId() == 145)
+			if(FallingBlockUtils.fallingBlockMatch(fallingBlock, XMaterial.ANVIL.parseMaterial()))
 			{
 				for(Entity nearbyEntity : fallingBlock.getNearbyEntities(1.1, 1.2, 1.1))
 				{
