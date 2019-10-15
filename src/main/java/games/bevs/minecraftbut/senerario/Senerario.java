@@ -171,6 +171,12 @@ public class Senerario implements Listener
 			
 			if(success)
 			{
+				if(this.isEnabled())
+				{
+					this.finish();
+					this.start();
+				}
+				
 				String message = CC.red + "Failed really bad, try hit up Sprock on Discord @ Heath#5377";
 				if(optional != null)
 				{

@@ -22,8 +22,8 @@ public class TNTOnSelf extends Senerario
 {
 	@Optional
 	private int triggerBelow = 200;
-	@Optional
-	private int secondsBetweenTNT = 60;
+	@Optional(reload = true)
+	private int secondsBetweenTNT = 30;
 	
 	public TNTOnSelf(ButWorld butWorld) 
 	{
