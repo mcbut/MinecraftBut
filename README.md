@@ -96,6 +96,7 @@ private void populateScenerarios(ButWorld butWorld)
   this.scenerarioManager.registerSenerario(new DummyExample(butWorld));
 }
 ```
+You can find more examples within [games.bevs.minecraftbut.senerario.senerarios](https://github.com/HeathLoganCampbell/MinecraftBut/tree/master/src/main/java/games/bevs/minecraftbut/senerario/senerarios)
 
 
 ## Download
