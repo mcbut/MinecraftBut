@@ -7,8 +7,8 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of bugginess
 
 ## Videos
-[Skeppy's video, Lava is rising - 462,081 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
-[Skeppy's video, Water is rising - 273,000 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
+[Skeppy's video, Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
+[Skeppy's video, Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
 [Wilbur Soot's video, Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)
 
 
