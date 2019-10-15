@@ -51,7 +51,7 @@ Note: senerarioId can be found in the lore of the item in the menu
 ## Developers
 ### Add a Senerario
 Simply extend Senerario, like so
-```
+```java
 public class DummyExample extends Senerario {
  //This allows players to edit the field through the command 
  //'/mb s DummyExample someNumberToEdit 1' which sets the value to 1
@@ -88,7 +88,7 @@ public class DummyExample extends Senerario {
 ```
 
 Then simply go to the games.bevs.minecraftbut.MinecraftButPlugin class
-```
+```java
 // and add the following line in games.bevs.minecraftbut.MinecraftButPlugin
 private void populateScenerarios(ButWorld butWorld)
 {
