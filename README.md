@@ -69,7 +69,7 @@ public class DummyExample extends Senerario {
  public void onStart() {
   //If you have a repeating task, I guess using repeat(runnable, ticks)
   //which auto cancels on disabl
-  this.repeat(() -> {}, 20 l * 1);
+  this.repeat(() -> {}, 20l * 1);
  }
 
  //called when Senerario is disalbed
