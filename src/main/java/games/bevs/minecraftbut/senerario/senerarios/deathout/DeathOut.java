@@ -20,7 +20,7 @@ public class DeathOut extends Senerario
 	
 	public DeathOut(ButWorld butWorld) 
 	{
-		super("Death Out", butWorld, XMaterial.SKELETON_SKULL.parseMaterial(), new String[] {"You're out if you die"} );
+		super("Death Out", butWorld, XMaterial.CACTUS.parseMaterial(), new String[] {"You're out if you die"} );
 	}
 
 	@Override
