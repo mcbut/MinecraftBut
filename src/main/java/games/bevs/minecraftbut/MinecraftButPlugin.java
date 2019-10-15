@@ -18,6 +18,7 @@ import games.bevs.minecraftbut.senerario.senerarios.TNTOnSelf;
 import games.bevs.minecraftbut.senerario.senerarios.TNTRain;
 import games.bevs.minecraftbut.senerario.senerarios.TheLavaRises;
 import games.bevs.minecraftbut.senerario.senerarios.TheWaterRises;
+import games.bevs.minecraftbut.senerario.senerarios.WorldDecay;
 import games.bevs.minecraftbut.senerario.senerarios.deathout.DeathOut;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.GemEater;
 import games.bevs.minecraftbut.world.ButWorld;
@@ -66,6 +67,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new TNTOnSelf(butWorld));
 		this.scenerarioManager.registerSenerario(new GemEater(butWorld));
 		this.scenerarioManager.registerSenerario(new DeathOut(butWorld));
+		this.scenerarioManager.registerSenerario(new WorldDecay(butWorld));
 		if(minecraft18)
 			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
 	}
