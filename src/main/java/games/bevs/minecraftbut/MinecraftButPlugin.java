@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import games.bevs.minecraftbut.commands.MinecraftButCommand;
 import games.bevs.minecraftbut.senerario.ScenerarioManager;
+import games.bevs.minecraftbut.senerario.senerarios.AnvilRain;
 import games.bevs.minecraftbut.senerario.senerarios.BedRockTrail;
 import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
 import games.bevs.minecraftbut.senerario.senerarios.NoJump;
@@ -61,6 +62,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new BedRockTrail(butWorld));
 		this.scenerarioManager.registerSenerario(new TNTOnSelf(butWorld));
 		this.scenerarioManager.registerSenerario(new GemEater(butWorld));
+		this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
 	}
 	
 	private CommandMap getCommandMap()

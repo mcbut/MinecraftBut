@@ -139,54 +139,54 @@ public class Senerario implements Listener
 			return;
 		}
 		
-		Bukkit.broadcastMessage("args " + args.length);
-		
-		String fieldName = option;
-		String value = args[0];
-		if(args.length > 1)
+		//handle auto optionals
+		if(args.length > 0)
 		{
-			for(int i = 1; i < args.length; i++)
+			String fieldName = option;
+			String value = args[0];
+			if(args.length > 1)
 			{
-				value += " " + args[i];
+				for(int i = 1; i < args.length; i++)
+				{
+					value += " " + args[i];
+				}
 			}
-		}
-		
-		Bukkit.broadcastMessage("value " + value);
-		
-		boolean success = false;
-		
-		Optional optional = this.getOptional(this, fieldName);
-		if(optional == null)
-		{
-			player.sendMessage(CC.red + "Could not find '" + fieldName + "'!" );
-			this.onHelp(player);
-			return;
-		}
-		
-		try {
-			if(editOptionalField(this, fieldName, value))
-				success = true;
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			e.printStackTrace();
-		}
-		
-		if(success)
-		{
-			String message = CC.red + "Failed really bad, try hit up Sprock on Discord @ Heath#5377";
-			if(optional != null)
+			
+			boolean success = false;
+			
+			Optional optional = this.getOptional(this, fieldName);
+			if(optional == null)
 			{
-				message = optional.successMessage();
-				if(message.length() < 3)
-					message = Optional.SUCCESS_MESSAGE;
-				
-				message = message.replaceAll("%name%", fieldName);
-				message = message.replaceAll("%value%", "'" + value + "'");
+				player.sendMessage(CC.red + "Could not find '" + fieldName + "'!" );
+				this.onHelp(player);
+				return;
 			}
-			player.sendMessage(message);
-		}
-		else
-		{
-			player.sendMessage(CC.red + "Something went wrong, incorrect type? int? true|false?");
+			
+			try {
+				if(editOptionalField(this, fieldName, value))
+					success = true;
+			} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+				e.printStackTrace();
+			}
+			
+			if(success)
+			{
+				String message = CC.red + "Failed really bad, try hit up Sprock on Discord @ Heath#5377";
+				if(optional != null)
+				{
+					message = optional.successMessage();
+					if(message.length() < 3)
+						message = Optional.SUCCESS_MESSAGE;
+					
+					message = message.replaceAll("%name%", fieldName);
+					message = message.replaceAll("%value%", "'" + value + "'");
+				}
+				player.sendMessage(message);
+			}
+			else
+			{
+				player.sendMessage(CC.red + "Something went wrong, incorrect type? int? true|false?");
+			}
 		}
 	}
 	
