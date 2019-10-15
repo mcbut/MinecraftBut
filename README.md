@@ -19,9 +19,12 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 * Raining Blocks
 * No Jumping
 * Dragon spawns
-* One heart
-* Bedrock Trail
-* Gem Eater (Ore Eater)
+* One heart - you only have 1 heart
+* Bedrock Trail - You leave a bedrock trail behind you
+* Gem Eater (Ore Eater) - You can only eat ores to live
+* TNT Spawn on Self - Tnt will spawn on you every so often
+* Anvil Rain - Anvil falls from the sky
+* Death Out - Set into spectator when you die (or kick when you die)
 
 ## Commands
 ```
