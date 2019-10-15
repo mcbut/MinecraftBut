@@ -71,6 +71,28 @@ public class MinecraftButCommand extends Command
 				sendSenerarioList(sender);
 				return true;
 			}
+			
+			if(args[0].equalsIgnoreCase("helpall") || args[0].equalsIgnoreCase("ha"))
+			{
+				Iterator<Senerario> senerarios = MinecraftButPlugin.getPlugin().getScenerarioManager().getSenerarios().values().iterator();
+				while(senerarios.hasNext())
+				{
+					Senerario senerario = senerarios.next();
+					senerario.help(sender);
+				}
+				return true;
+			}
+			
+			if(args[0].equalsIgnoreCase("help") || args[0].equalsIgnoreCase("h"))
+			{
+				sender.sendMessage(CC.aqua + "/MinecraftBut list - Will list all Senerario");
+				sender.sendMessage(CC.aqua + "/MinecraftBut help - Helps with top level commands");
+				sender.sendMessage(CC.aqua + "/MinecraftBut helpall - Will tell you all Senerario configs");
+				sender.sendMessage(CC.aqua + "/MinecraftBut Senerario <SenerarioId> - Allows you to config a Senerario");
+				sender.sendMessage(CC.aqua + "You can use 'Mb' as shorthand for 'MinecraftBut'");
+				sender.sendMessage(CC.aqua + "You can use 's' as shorthand for 'Senerario'");
+				return true;
+			}
 		}
 		if(args.length >= 2)
 		{

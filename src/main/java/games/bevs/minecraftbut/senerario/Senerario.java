@@ -211,11 +211,16 @@ public class Senerario implements Listener
 		return CC.red + "/MinecraftBut Senerario " + this.getId() + " "+ option + " " + args;
 	}
 	
-	protected void onHelp(Player player)
+	public void help(CommandSender sender)
 	{
-		player.sendMessage(withBaseCommand("status", "<Enable|Disable>"));
+		this.onHelp(sender);
+	}
+	
+	protected void onHelp(CommandSender sender)
+	{
+		sender.sendMessage(withBaseCommand("status", "<Enable|Disable>"));
 		for(Field optionField : this.getOptionalFields())
-			player.sendMessage(withBaseCommand(optionField.getName(), optionField.getType()));
+			sender.sendMessage(withBaseCommand(optionField.getName(), optionField.getType()));
 	}
 	
 	public List<Field> getOptionalFields()

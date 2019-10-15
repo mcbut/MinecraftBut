@@ -4,6 +4,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import games.bevs.minecraftbut.commons.Console;
@@ -93,12 +94,12 @@ public class TheWaterRises extends Senerario
 	}
 	
 	@Override
-	protected void onHelp(Player player)
+	protected void onHelp(CommandSender sender)
 	{
-		super.onHelp(player);
+		super.onHelp(sender);
 		
-		player.sendMessage(withBaseCommand("WaterStartLevel", "<Y (number)>"));
-		player.sendMessage(withBaseCommand("WaterSpeed", "<Seconds (number)>"));
+		sender.sendMessage(withBaseCommand("WaterStartLevel", "<Y (number)>"));
+		sender.sendMessage(withBaseCommand("WaterSpeed", "<Seconds (number)>"));
 	}
 	
 	private void fill()

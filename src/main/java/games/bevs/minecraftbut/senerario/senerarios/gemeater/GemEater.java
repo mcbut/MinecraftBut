@@ -2,6 +2,7 @@ package games.bevs.minecraftbut.senerario.senerarios.gemeater;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.Action;
@@ -84,11 +85,11 @@ public class GemEater extends Senerario
 	}
 	
 	@Override
-	protected void onHelp(Player player)
+	protected void onHelp(CommandSender sender)
 	{
-		super.onHelp(player);
+		super.onHelp(sender);
 		
-		player.sendMessage(withBaseCommand("specialGems", "<True|False>"));
+		sender.sendMessage(withBaseCommand("specialGems", "<True|False>"));
 	}
 	
 	

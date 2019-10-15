@@ -4,6 +4,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import games.bevs.minecraftbut.commons.Console;
@@ -87,12 +88,12 @@ public class TheLavaRises extends Senerario
 	}
 	
 	@Override
-	protected void onHelp(Player player)
+	protected void onHelp(CommandSender sender)
 	{
-		super.onHelp(player);
+		super.onHelp(sender);
 		
-		player.sendMessage(withBaseCommand("LavaStartLevel", "<Y (number)>"));
-		player.sendMessage(withBaseCommand("LavaSpeed", "<Seconds (number)>"));
+		sender.sendMessage(withBaseCommand("LavaStartLevel", "<Y (number)>"));
+		sender.sendMessage(withBaseCommand("LavaSpeed", "<Seconds (number)>"));
 	}
 	
 	private void fill()
