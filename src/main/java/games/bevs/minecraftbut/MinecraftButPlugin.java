@@ -3,11 +3,11 @@ package games.bevs.minecraftbut;
 import java.lang.reflect.Field;
 
 import org.bukkit.Bukkit;
-import org.bukkit.World;
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import games.bevs.minecraftbut.commands.MinecraftButCommand;
+import games.bevs.minecraftbut.listeners.WelcomeListener;
 import games.bevs.minecraftbut.senerario.ScenerarioManager;
 import games.bevs.minecraftbut.senerario.senerarios.AnvilRain;
 import games.bevs.minecraftbut.senerario.senerarios.BedRockTrail;
@@ -38,6 +38,8 @@ public class MinecraftButPlugin extends JavaPlugin
 		
 		this.scenerarioManager = new ScenerarioManager();
 		this.populateScenerarios(this.butWorld);
+		
+		Bukkit.getPluginManager().registerEvents(new WelcomeListener(this.butWorld), this);
 		
 		this.registerCommands();
 	}
