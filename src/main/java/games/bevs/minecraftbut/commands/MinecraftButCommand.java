@@ -23,6 +23,8 @@ import games.bevs.minecraftbut.senerario.Senerario;
 
 public class MinecraftButCommand extends Command
 {
+	public static final String ROOT_PERMISSION = "minecraftbut.command.minecraftbut";
+	
 	private static List<String> SENERARIOS = null;
 	
 	private SenerarioMenu senerarioMenu = new SenerarioMenu(CC.b + "Senerario");
@@ -64,6 +66,12 @@ public class MinecraftButCommand extends Command
 	@Override
 	public boolean execute(CommandSender sender, String cmd, String[] args)
 	{
+		if(!sender.hasPermission(ROOT_PERMISSION))
+		{
+			sender.sendMessage(CC.red + "You do not have the permission " + ROOT_PERMISSION);
+			return false; 
+		}
+		
 		if(args.length == 1)
 		{
 			if(args[0].equalsIgnoreCase("list") || args[0].equalsIgnoreCase("l"))
