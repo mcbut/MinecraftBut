@@ -55,6 +55,8 @@ Note: senerarioId can be found in the lore of the item in the menu
 ```
 Change the world that the plugin is running on
 
+Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the youtubers
+
 
 ## Developers
 ### Add a Senerario
