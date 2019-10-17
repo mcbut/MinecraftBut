@@ -45,7 +45,8 @@ public class SenerarioMenu extends Menu
 					 new ItemStackBuilder(senerario.getIcon())
 					 	 .displayName(CC.b + (senerario.isEnabled() ? CC.green : CC.red) + senerario.getName())
 					 	 .lore(senerario.getDescription())
-					 	 .addLore(CC.gray + "Id: " + senerario.getId()),
+					 	 .addLore(CC.gray + "Id: " + senerario.getId())
+					 	 .addLore(CC.gray + "Click to " + (senerario.isEnabled() ? "disable" : "enable")),
 					 (player) -> {
 						 if(senerario.isEnabled())
 						 {
