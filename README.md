@@ -47,7 +47,14 @@ learn ways that you can configure a Senerario
 /MinecraftBut Senerario <senerarioId> <Args>
 ```
 Configure a Senerario
+
 Note: senerarioId can be found in the lore of the item in the menu
+
+```
+/MinecraftBut world <WorldName>
+```
+Change the world that the plugin is running on
+
 
 ## Developers
 ### Add a Senerario

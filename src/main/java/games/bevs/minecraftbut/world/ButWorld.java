@@ -7,10 +7,11 @@ import org.bukkit.World;
 import org.bukkit.WorldBorder;
 
 import lombok.Getter;
+import lombok.Setter;
 
 public class ButWorld 
 {
-	@Getter
+	@Getter 
 	private World world;
 	private int size = 150;
 	
@@ -22,6 +23,17 @@ public class ButWorld
 	{
 		this.world = world;
 		
+		this.initWorld(world);
+	}
+	
+	public void setWorld(World world)
+	{
+		this.world = world;
+		this.initWorld(world);
+	}
+	
+	public void initWorld(World world)
+	{
 		int heightsBlock = this.world.getHighestBlockYAt(0, 0);
 		this.world.setSpawnLocation(0, heightsBlock + 3, 0);
 		

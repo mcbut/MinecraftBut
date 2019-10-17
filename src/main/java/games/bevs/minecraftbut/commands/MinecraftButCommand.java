@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.bukkit.Bukkit;
+import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.StringUtil;
 
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Lists;
 
 import games.bevs.minecraftbut.MinecraftButPlugin;
 import games.bevs.minecraftbut.commons.utils.CC;
@@ -89,6 +89,7 @@ public class MinecraftButCommand extends Command
 				sender.sendMessage(CC.aqua + "/MinecraftBut help - Helps with top level commands");
 				sender.sendMessage(CC.aqua + "/MinecraftBut helpall - Will tell you all Senerario configs");
 				sender.sendMessage(CC.aqua + "/MinecraftBut Senerario <SenerarioId> - Allows you to config a Senerario");
+				sender.sendMessage(CC.aqua + "/MinecraftBut World <WorldName> - Set the world that is currently effect");
 				sender.sendMessage(CC.aqua + "You can use 'Mb' as shorthand for 'MinecraftBut'");
 				sender.sendMessage(CC.aqua + "You can use 's' as shorthand for 'Senerario'");
 				return true;
@@ -96,6 +97,21 @@ public class MinecraftButCommand extends Command
 		}
 		if(args.length >= 2)
 		{
+			if(args[0].equalsIgnoreCase("world") || args[0].equalsIgnoreCase("w"))
+			{
+				String worldName = args[1];
+				World world = Bukkit.getWorld(worldName);
+				if(world == null)
+				{
+					Bukkit.getWorlds().forEach( optionWorld -> sender.sendMessage("World Option: " + optionWorld.getName()));
+					sender.sendMessage(CC.red + "This is not a world!");
+					return false;
+				}
+				
+				MinecraftButPlugin.getPlugin().getButWorld().setWorld(world);
+				sender.sendMessage(CC.green + "MinecraftBut ] World set to " + world.getName());
+			}
+			
 			if(args[0].equalsIgnoreCase("Senerario") || args[0].equalsIgnoreCase("s"))
 			{
 				String senerarioId = args[1];

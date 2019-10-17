@@ -3,6 +3,7 @@ package games.bevs.minecraftbut;
 import java.lang.reflect.Field;
 
 import org.bukkit.Bukkit;
+import org.bukkit.World;
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -36,7 +37,6 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.butWorld = new ButWorld(Bukkit.getWorlds().get(0));
 		
 		this.scenerarioManager = new ScenerarioManager();
-		
 		this.populateScenerarios(this.butWorld);
 		
 		this.registerCommands();
@@ -54,8 +54,9 @@ public class MinecraftButPlugin extends JavaPlugin
 	
 	private void populateScenerarios(ButWorld butWorld)
 	{
-		boolean minecraft18 = Bukkit.getServer().getClass().getPackage().toString().contains("1.8");
+		boolean minecraft18 = Bukkit.getServer().getClass().getPackage().toString().contains("1_8");
 		
+		Bukkit.broadcastMessage(Bukkit.getServer().getClass().getPackage().toString());
 		this.scenerarioManager.registerSenerario(new EnderDragonAppears(butWorld));
 		this.scenerarioManager.registerSenerario(new NoJump(butWorld));
 		this.scenerarioManager.registerSenerario(new OneHit(butWorld));
