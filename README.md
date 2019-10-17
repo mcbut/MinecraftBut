@@ -27,6 +27,13 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 * Death Out - Set into spectator when you die (or kick when you die)
 * World Decay - Every  block the sun touches slowly breaks down
 
+## Permissions
+
+```
+minecraftbut.command.minecraftbut
+```
+We only have one permission for the root command
+
 ## Commands
 ```
 /MinecraftBut
@@ -51,9 +58,9 @@ Configure a Senerario
 Note: senerarioId can be found in the lore of the item in the menu
 
 ```
-/MinecraftBut world <WorldName>
+/MinecraftBut changeworld <WorldName>
 ```
-Change the world that the plugin is running on
+Change the world that the plugin is running on, Use case is just for multiverse support
 
 Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the youtubers
 

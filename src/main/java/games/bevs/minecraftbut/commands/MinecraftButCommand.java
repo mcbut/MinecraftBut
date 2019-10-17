@@ -69,7 +69,7 @@ public class MinecraftButCommand extends Command
 		if(!sender.hasPermission(ROOT_PERMISSION))
 		{
 			sender.sendMessage(CC.red + "You do not have the permission " + ROOT_PERMISSION);
-			return false; 
+			return false;
 		}
 		
 		if(args.length == 1)
@@ -105,7 +105,7 @@ public class MinecraftButCommand extends Command
 		}
 		if(args.length >= 2)
 		{
-			if(args[0].equalsIgnoreCase("world") || args[0].equalsIgnoreCase("w"))
+			if(args[0].equalsIgnoreCase("changeworld") || args[0].equalsIgnoreCase("cw"))
 			{
 				String worldName = args[1];
 				World world = Bukkit.getWorld(worldName);
