@@ -37,21 +37,25 @@ We only have one permission for the root command
 ## Commands
 ```
 /MinecraftBut
+/mb
 ```
 Open's the Menu to enable and disable Senerarios
 
 ```
 /MinecraftBut help
+/mb help
 ```
 help for top level command
 
 ```
 /MinecraftBut Senerario <senerarioId> help
+/mb s <senerarioId> help
 ```
 learn ways that you can configure a Senerario
 
 ```
 /MinecraftBut Senerario <senerarioId> <Args>
+/mb s <senerarioId> <Args>
 ```
 Configure a Senerario
 
@@ -59,6 +63,7 @@ Note: senerarioId can be found in the lore of the item in the menu
 
 ```
 /MinecraftBut changeworld <WorldName>
+/mb cw <Name>
 ```
 Change the world that the plugin is running on, Use case is just for multiverse support
 
