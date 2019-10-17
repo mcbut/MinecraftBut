@@ -26,6 +26,6 @@ public class WelcomeListener implements Listener
 		if(this.getButWorld().getWorld() != world)
 			return;
 		
-		player.sendMessage(CC.bAqua + "  MinecraftBut " + CC.gray + "made by " + CC.bAqua + "Sprock (Heath#)" + CC.gray + "!");
+		player.sendMessage(CC.bAqua + "  MinecraftBut " + CC.gray + "made by " + CC.bAqua + "Sprock" + CC.gray + "!");
 	}
 }
