@@ -13,7 +13,8 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 [Skeppy's video, Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
 [Skeppy's video, Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
 [Wilbur Soot's video, Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)
-
+[Skeppy's Video, TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)
+[Skeepy's Video, 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)
 
 ## Senerario
 * Lava is Rising
