@@ -31,6 +31,13 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 * Death Out - Set into spectator when you die (or kick when you die)
 * World Decay - Every  block the sun touches slowly breaks down
 
+## How to install
+* Have a Spigot server on version  1.8 or 1.14
+ * You can buy a spigot server from [here](https://mcprohosting.com/order?aff=81875)
+ * or you can selfhost it
+* Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
+* start the server and you're done
+
 ## Permissions
 
 ```
