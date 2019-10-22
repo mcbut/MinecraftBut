@@ -7,7 +7,7 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.4)
 
 ## Versions
-Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of bugginess
+Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14, versions in between are up in the air in terms of bugginess
 
 ## Videos
 [Skeppy's video, Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
