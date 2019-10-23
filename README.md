@@ -17,7 +17,7 @@ Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCN
 [Skeepy's Video, 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
 [Skeppy's Video, Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)
 
-## Senerario
+## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
 * Water is Rising
 * Raining TNT
