@@ -4,6 +4,7 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -19,7 +20,7 @@ import net.md_5.bungee.api.ChatColor;
 public class WorldDecay extends Senerario
 {
 	@Optional
-	private long decaysPerSecond = 10l;
+	private int decaysPerSecond = 40;
 	
 	public WorldDecay(ButWorld butWorld) 
 	{
@@ -36,6 +37,7 @@ public class WorldDecay extends Senerario
 				int ranX = MathUtils.getRandom().nextInt(this.getButWorld().getMaxLocation().getBlockX() - this.getButWorld().getMinLocation().getBlockX()) + this.getButWorld().getMinLocation().getBlockX();
 				int ranZ = MathUtils.getRandom().nextInt(this.getButWorld().getMaxLocation().getBlockZ() - this.getButWorld().getMinLocation().getBlockZ()) + this.getButWorld().getMinLocation().getBlockZ();
 				Block block = this.getButWorld().getWorld().getHighestBlockAt(ranX, ranZ);
+				block = block.getRelative(BlockFace.DOWN);
 				
 				if(block.getType() == Material.BEDROCK)
 					continue;
