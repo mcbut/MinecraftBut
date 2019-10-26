@@ -4,18 +4,21 @@ A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
 The youtubers will spawn in a small world with the option to apply multiple different senerarios
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.3)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.4)
 
 ## Versions
-Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of bugginess
+Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14, versions in between are up in the air in terms of bugginess
 
 ## Videos
 [Skeppy's video, Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
 [Skeppy's video, Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
-[Wilbur Soot's video, Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)
+[Wilbur Soot's video, Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
+[Skeppy's Video, TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
+[Skeepy's Video, 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
+[Skeppy's Video, Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
+[Skeppy's video, the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
 
-
-## Senerario
+## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
 * Water is Rising
 * Raining TNT
@@ -29,6 +32,13 @@ Mainly we support 1.8 & 1.14, versions in between are up in the air in terms of 
 * Anvil Rain - Anvil falls from the sky
 * Death Out - Set into spectator when you die (or kick when you die)
 * World Decay - Every  block the sun touches slowly breaks down
+
+## How to install
+* Have a Spigot server on version  [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
+ * You can buy a spigot server from [here](https://mcprohosting.com/order?aff=81875)
+ * or you can selfhost it
+* Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
+* start the server and you're done
 
 ## Permissions
 
@@ -125,11 +135,12 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.3)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.4)
 
 
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin. 
-So it would be dope if I made something back from it  
+So it would be dope if I made something back from it.
+Baked with love by Sprock
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)
