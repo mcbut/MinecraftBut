@@ -4,7 +4,7 @@ A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
 The youtubers will spawn in a small world with the option to apply multiple different senerarios
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.4)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.5)
 
 ## Versions
 Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14, versions in between are up in the air in terms of bugginess
@@ -135,7 +135,7 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.4)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.5)
 
 
 ## Donate
