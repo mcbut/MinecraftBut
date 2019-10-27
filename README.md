@@ -5,6 +5,7 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.5)
+It'll also be nice if you star'ed the project :) (It pretty much means 'like' & It's free)
 
 ## Versions
 Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14, versions in between are up in the air in terms of bugginess
