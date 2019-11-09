@@ -41,7 +41,7 @@ public class FasterAndFaster extends Senerario
 	@Override
 	public void onFinish()
 	{
-		
+		Bukkit.getOnlinePlayers().forEach(player -> player.removePotionEffect(PotionEffectType.SPEED));
 	}
 	
 	@EventHandler
