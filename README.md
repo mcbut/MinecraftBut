@@ -85,6 +85,11 @@ Note: I will not support the plugin running on multiple worlds at once, as it's 
 
 
 ## Developers
+## Tools used
+* [Maven](https://maven.apache.org/) this should already be install on most common IDEs 
+* [BuildTools](https://www.spigotmc.org/wiki/buildtools/#1-8-8)
+* [Lombok](https://projectlombok.org/download)
+
 ### Add a Senerario
 Simply extend Senerario, like so
 ```java
