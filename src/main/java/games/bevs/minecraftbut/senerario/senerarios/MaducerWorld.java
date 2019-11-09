@@ -37,7 +37,7 @@ public class MaducerWorld extends Senerario
 				int ranX = MathUtils.getRandom().nextInt(this.getButWorld().getMaxLocation().getBlockX() - this.getButWorld().getMinLocation().getBlockX()) + this.getButWorld().getMinLocation().getBlockX();
 				int ranY = MathUtils.getRandom().nextInt(this.getButWorld().getWorld().getMaxHeight());
 				int ranZ = MathUtils.getRandom().nextInt(this.getButWorld().getMaxLocation().getBlockZ() - this.getButWorld().getMinLocation().getBlockZ()) + this.getButWorld().getMinLocation().getBlockZ();
-				Block block = this.getButWorld().getWorld().getBlockAt(ranX, ranY, ranY);
+				Block block = this.getButWorld().getWorld().getBlockAt(ranX, ranY, ranZ);
 				if(block == null) continue;
 				
 				if(block.getType() == Material.BEDROCK)
