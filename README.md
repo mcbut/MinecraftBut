@@ -90,6 +90,13 @@ Note: I will not support the plugin running on multiple worlds at once, as it's 
 * [BuildTools](https://www.spigotmc.org/wiki/buildtools/#1-8-8)
 * [Lombok](https://projectlombok.org/download)
 
+## Download code
+```
+git clone git@github.com:HeathLoganCampbell/MinecraftBut.git
+```
+A folder called  "MinecraftBut" is now created, so from now on you can cd to this folder and type
+``git pull`` to download changes made
+
 ### Add a Senerario
 Simply extend Senerario, like so
 ```java
