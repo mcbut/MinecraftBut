@@ -51,7 +51,7 @@ public class LinkedHealth extends Senerario
 		
 		double damageTaken = e.getFinalDamage();
 		Bukkit.getOnlinePlayers().forEach(other -> {
-			if(other.getGameMode() == GameMode.SURVIVAL)
+			if(other.getGameMode() == GameMode.SURVIVAL && !other.isDead())
 				other.damage(damageTaken);
 		});
 	}

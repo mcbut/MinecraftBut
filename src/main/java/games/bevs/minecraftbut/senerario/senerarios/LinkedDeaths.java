@@ -49,7 +49,7 @@ public class LinkedDeaths extends Senerario
 		
 		Bukkit.broadcastMessage(CC.b + player.getName() + " has messed it up for everyone!");
 		Bukkit.getOnlinePlayers().forEach(other -> {
-			if(other.getGameMode() == GameMode.SURVIVAL)
+			if(other.getGameMode() == GameMode.SURVIVAL && !other.isDead())
 				other.damage(10000);
 		});
 	}

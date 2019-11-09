@@ -16,7 +16,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class TheLavaRises extends Senerario
 {
-	private int hieghtY = 173;
+	private int hieghtY = 8;
 	private long lavaSpeed = 45l;
 	
 	private Material lavaMaterial = XMaterial.LAVA.parseMaterial();
