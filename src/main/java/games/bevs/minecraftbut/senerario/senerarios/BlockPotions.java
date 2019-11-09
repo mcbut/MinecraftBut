@@ -1,5 +1,6 @@
 package games.bevs.minecraftbut.senerario.senerarios;
 
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -59,6 +60,7 @@ public class BlockPotions extends Senerario
 	public void onBreak(BlockBreakEvent e)
 	{
 		Player player = e.getPlayer();
+		if(player.getGameMode() == GameMode.CREATIVE) return;
 		this.applyPotion(player);
 	}
 }
