@@ -15,6 +15,7 @@ import games.bevs.minecraftbut.senerario.senerarios.BlockPotions;
 import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
 import games.bevs.minecraftbut.senerario.senerarios.FasterAndFaster;
 import games.bevs.minecraftbut.senerario.senerarios.LinkedDeaths;
+import games.bevs.minecraftbut.senerario.senerarios.LinkedHealth;
 import games.bevs.minecraftbut.senerario.senerarios.MaducerWorld;
 import games.bevs.minecraftbut.senerario.senerarios.NoJump;
 import games.bevs.minecraftbut.senerario.senerarios.OneHit;
@@ -79,6 +80,7 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new MaducerWorld(butWorld));
 		this.scenerarioManager.registerSenerario(new LinkedDeaths(butWorld));
 		this.scenerarioManager.registerSenerario(new BlockPotions(butWorld));
+		this.scenerarioManager.registerSenerario(new LinkedHealth(butWorld));
 		
 		if(minecraft18)
 			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
