@@ -101,6 +101,8 @@ Change the world that the plugin is running on, Use case is just for multiverse 
 
 Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the youtubers
 
+## Features
+[![Feature Requests](https://feathub.com/HeathLoganCampbell/MinecraftBut?format=svg)](https://feathub.com/HeathLoganCampbell/MinecraftBut)
 
 ## Developers
 ## Tools used
