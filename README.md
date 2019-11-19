@@ -3,7 +3,7 @@
 A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
 The youtubers will spawn in a small world with the option to apply multiple different senerarios
 
-## join the DISCORD for more cotent
+## join the DISCORD for more content
 [Join the discord](https://discord.gg/qRXFA5)  
 Note that this is more of a chill area, I'm not gonna offer much support
 
