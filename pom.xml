@@ -6,6 +6,15 @@
 	<artifactId>MinecraftButPlugin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MinecraftBut</name>
+	
+	 <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spiogt.version>1.8.8-R0.1-SNAPSHOT</spiogt.version>
+        <plugins.version>1.0</plugins.version>
+    </properties>
+	
 
 	<repositories>
 		<repository>
@@ -20,12 +29,13 @@
 
 	<dependencies>
 		<!-- Minecraft server - so we can interact with the ap -->
-		<dependency>
-			<groupId>com.github.bevsgames</groupId>
-			<artifactId>BevsSpigot</artifactId>
-			<version>9caa65fe57</version>
-			<scope>provided</scope>
-		</dependency> 
+		<!-- You have to run buildtools for this badboy -->
+		 <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>${spiogt.version}</version>
+            <scope>provided</scope>
+        </dependency>
 		<!-- <dependency> <groupId>org.spigotmc</groupId> <artifactId>spigot-api</artifactId> 
 			<version>1.14.4-R0.1-SNAPSHOT</version> <scope>provided</scope> </dependency> -->
 

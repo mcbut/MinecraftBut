@@ -27,6 +27,7 @@ import games.bevs.minecraftbut.senerario.senerarios.TheWaterRises;
 import games.bevs.minecraftbut.senerario.senerarios.WorldDecay;
 import games.bevs.minecraftbut.senerario.senerarios.deathout.DeathOut;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.GemEater;
+import games.bevs.minecraftbut.senerario.senerarios.linkedinvs.LinkedInventories;
 import games.bevs.minecraftbut.world.ButWorld;
 import lombok.Getter;
 
@@ -82,8 +83,12 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new BlockPotions(butWorld));
 		this.scenerarioManager.registerSenerario(new LinkedHealth(butWorld));
 		
+		
 		if(minecraft18)
+		{
 			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
+			this.scenerarioManager.registerSenerario(new LinkedInventories(butWorld));
+		}
 	}
 	
 	private CommandMap getCommandMap()
