@@ -166,7 +166,7 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.5)
+[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
 
 
 ## Donate
