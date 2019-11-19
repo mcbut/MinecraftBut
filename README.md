@@ -37,6 +37,20 @@ Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCN
 * Anvil Rain - Anvil falls from the sky
 * Death Out - Set into spectator when you die (or kick when you die)
 * World Decay - Every  block the sun touches slowly breaks down
+* Linked Inventories - everyone shares inventory
+* Linked Health - everyone shares health
+* Linked Deaths - One player dies, everyone dies
+* FasterAndFaster - get faster every minute
+* Maducer World - world truns to bedrock
+* Mobs Multiple - Every time you hit a mob, it multiples 
+* Shrinking Inventory - you get less and less inventory space as time goes on
+* Block Potion - every block gives a potion when broken
+
+use to view all credits and their channels
+```
+/mb credit
+```
+
 
 ## How to install
 * Have a Spigot server on version  [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
