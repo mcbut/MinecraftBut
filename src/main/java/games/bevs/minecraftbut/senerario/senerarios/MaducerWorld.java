@@ -24,7 +24,7 @@ public class MaducerWorld extends Senerario
 	
 	public MaducerWorld(ButWorld butWorld) 
 	{
-		super("Maducer World", butWorld, Material.BRICK, new String[] {"The world slowly turns to bedrock"});
+		super("Maducer World", butWorld, Material.BRICK, new String[] {"The world slowly turns to bedrock"}, "Dream");
 	}
 
 	

@@ -27,7 +27,7 @@ public class TheWaterRises extends Senerario
 	
 	public TheWaterRises(ButWorld butWorld) 
 	{
-		super("The Water is rising", butWorld, Material.WATER_BUCKET, new String[] { "Every minute (or amount of time you set) the water level will raise" });
+		super("The Water is rising", butWorld, Material.WATER_BUCKET, new String[] { "Every minute (or amount of time you set) the water level will raise" }, "WilburSoot");
 	}
 
 	

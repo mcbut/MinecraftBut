@@ -46,7 +46,9 @@ public class SenerarioMenu extends Menu
 					 	 .displayName(CC.b + (senerario.isEnabled() ? CC.green : CC.red) + senerario.getName())
 					 	 .lore(senerario.getDescription())
 					 	 .addLore(CC.gray + "Id: " + senerario.getId())
-					 	 .addLore(CC.gray + "Click to " + (senerario.isEnabled() ? "disable" : "enable")),
+					 	 .addLore(CC.gray + "Click to " + (senerario.isEnabled() ? "disable" : "enable"))
+					 	 .addLore("")
+					 	 .addLore(CC.green + "Credit: " + senerario.getCredit()),
 					 (player) -> {
 						 if(senerario.isEnabled())
 						 {

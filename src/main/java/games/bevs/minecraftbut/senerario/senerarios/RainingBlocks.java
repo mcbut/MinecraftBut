@@ -16,7 +16,7 @@ public class RainingBlocks extends Senerario
 	
 	public RainingBlocks(ButWorld butWorld) 
 	{
-		super("Raining Blocks", butWorld, XMaterial.COMMAND_BLOCK.parseMaterial(), new String[] {"Random blocks will fall from the sky"} );
+		super("Raining Blocks", butWorld, XMaterial.COMMAND_BLOCK.parseMaterial(), new String[] {"Random blocks will fall from the sky"}, "Sprock");
 	}
 
 	@SuppressWarnings("deprecation")

@@ -23,7 +23,7 @@ public class LinkedHealth extends Senerario
 	
 	public LinkedHealth(ButWorld butWorld) 
 	{
-		super("Linked Health", butWorld, Material.APPLE, new String[] {"All players share health"});
+		super("Linked Health", butWorld, Material.APPLE, new String[] {"All players share health"}, "BadBoyHalo");
 	}
 	
 	

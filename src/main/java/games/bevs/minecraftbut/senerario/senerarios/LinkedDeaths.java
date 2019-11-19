@@ -21,7 +21,7 @@ public class LinkedDeaths extends Senerario
 	
 	public LinkedDeaths(ButWorld butWorld) 
 	{
-		super("Linked Deaths", butWorld, Material.FISHING_ROD, new String[] {"One player dies, everyone dies"});
+		super("Linked Deaths", butWorld, Material.FISHING_ROD, new String[] {"One player dies, everyone dies"}, "CallMeCarson");
 	}
 
 

@@ -24,7 +24,7 @@ public class WorldDecay extends Senerario
 	
 	public WorldDecay(ButWorld butWorld) 
 	{
-		super("World Decay", butWorld, Material.BRICK, new String[] {"Every block the sun touches slowly breaks down"});
+		super("World Decay", butWorld, Material.BRICK, new String[] {"Every block the sun touches slowly breaks down"}, "WilburSoot");
 	}
 
 	

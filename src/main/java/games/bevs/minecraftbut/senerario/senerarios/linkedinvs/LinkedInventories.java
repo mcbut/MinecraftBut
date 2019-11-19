@@ -6,6 +6,7 @@ import org.bukkit.craftbukkit.v1_8_R3.entity.CraftHumanEntity;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryEvent;
 import org.bukkit.event.player.PlayerInventoryEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -23,7 +24,7 @@ public class LinkedInventories extends Senerario
 {	
 	public LinkedInventories(ButWorld butWorld) 
 	{
-		super("Linked Inventories", butWorld, Material.CHEST, new String[] {"All players share Inventories"});
+		super("Linked Inventories", butWorld, Material.CHEST, new String[] {"All players share Inventories"}, "GeorgeNotFound");
 	}
 	
 	
@@ -40,14 +41,16 @@ public class LinkedInventories extends Senerario
 	}
 	
 	@EventHandler
-	public void onInventory(PlayerInventoryEvent e)
+	public void onInventory(InventoryClickEvent e)
 	{
-		Player player = e.getPlayer();
-		for(Player onlinePlayer : Bukkit.getOnlinePlayers())
-		{
-			if(player == onlinePlayer) continue;
-			onlinePlayer.getInventory().setArmorContents(player.getInventory().getArmorContents());
-			onlinePlayer.getInventory().setContents(player.getInventory().getContents());
-		}
+		Player player = (Player) e.getWhoClicked();
+		this.delay(() -> {
+			for(Player onlinePlayer : Bukkit.getOnlinePlayers())
+			{
+				if(player == onlinePlayer) continue;
+				onlinePlayer.getInventory().setArmorContents(player.getInventory().getArmorContents());
+				onlinePlayer.getInventory().setContents(player.getInventory().getContents());
+			}
+		}, 1l);
 	}
 }

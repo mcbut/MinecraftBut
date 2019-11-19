@@ -30,6 +30,7 @@ public class Senerario implements Listener
 	private @NonNull ButWorld butWorld;
 	private @NonNull Material icon;
 	private @NonNull String[] description;
+	private @NonNull String credit;
 	private boolean enabled = false;
 	private ArrayList<Integer> runnableIds = new ArrayList<>();
 	
@@ -37,6 +38,11 @@ public class Senerario implements Listener
 	{
 		int id = Bukkit.getScheduler().scheduleSyncRepeatingTask(MinecraftButPlugin.getPlugin(), run, sprints, sprints);
 		this.runnableIds.add(id);
+	}
+	
+	public void delay(Runnable run, long sprints)
+	{
+		Bukkit.getScheduler().scheduleSyncDelayedTask(MinecraftButPlugin.getPlugin(), run, sprints);
 	}
 	
 	public void start()

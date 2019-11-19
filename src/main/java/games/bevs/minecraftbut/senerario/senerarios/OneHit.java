@@ -14,7 +14,7 @@ public class OneHit extends Senerario
 {
 	public OneHit(ButWorld butWorld) 
 	{
-		super("One Hit", butWorld, Material.BONE, new String[] {"You are given only one heart"});
+		super("One Hit", butWorld, Material.BONE, new String[] {"You are given only one heart"}, "Sprock");
 	}
 
 	private void applyOneHit(Player player)

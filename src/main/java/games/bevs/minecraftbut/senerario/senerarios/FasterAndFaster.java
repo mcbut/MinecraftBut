@@ -23,7 +23,7 @@ public class FasterAndFaster extends Senerario
 	
 	public FasterAndFaster(ButWorld butWorld) 
 	{
-		super("Everyones Speed increases", butWorld, Material.LEATHER_BOOTS, new String[] { "Every minute your speed gets faster" });
+		super("Everyones Speed increases", butWorld, Material.LEATHER_BOOTS, new String[] { "Every minute your speed gets faster" }, "Dream");
 	}
 
 	

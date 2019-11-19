@@ -14,7 +14,7 @@ public class TNTRain extends Senerario
 	private int hieghtY = 140;
 	public TNTRain(ButWorld butWorld) 
 	{
-		super("TNT Rain", butWorld, XMaterial.TNT.parseMaterial(), new String[] {"TNT will rain from the sky continusly"});
+		super("TNT Rain", butWorld, XMaterial.TNT.parseMaterial(), new String[] {"TNT will rain from the sky continusly"}, "WilburSoot");
 	}
 
 	@Override

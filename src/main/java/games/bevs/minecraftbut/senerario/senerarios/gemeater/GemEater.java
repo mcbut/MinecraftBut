@@ -31,7 +31,7 @@ public class GemEater extends Senerario
 	
 	public GemEater(ButWorld butWorld) 
 	{
-		super("Gem Eater", butWorld, Material.IRON_INGOT, new String[] {"You can only eat ores", "coal, iron, gold, diamond, redstone, lapis"});
+		super("Gem Eater", butWorld, Material.IRON_INGOT, new String[] {"You can only eat ores", "coal, iron, gold, diamond, redstone, lapis"}, "WilburSoot");
 		
 		this.gemManager = new GemManager();
 		

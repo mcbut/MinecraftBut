@@ -27,7 +27,7 @@ public class TNTOnSelf extends Senerario
 	
 	public TNTOnSelf(ButWorld butWorld) 
 	{
-		super("TNT On Self", butWorld, Material.TNT, new String[] {"TNT will spawn on you every minute"});
+		super("TNT On Self", butWorld, Material.TNT, new String[] {"TNT will spawn on you every minute"}, "WilburSoot");
 	}
 
 	

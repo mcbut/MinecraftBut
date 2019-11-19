@@ -16,7 +16,7 @@ public class NoJump extends Senerario
 {
 	public NoJump(ButWorld butWorld) 
 	{
-		super("No Jump", butWorld, Material.RABBIT_FOOT, new String[] {"Jumping is disabled"});
+		super("No Jump", butWorld, Material.RABBIT_FOOT, new String[] {"Jumping is disabled"}, "Sprock");
 	}
 
 	private void applyNoJump(Player player)

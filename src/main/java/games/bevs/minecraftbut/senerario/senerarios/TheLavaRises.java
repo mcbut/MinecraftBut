@@ -26,7 +26,7 @@ public class TheLavaRises extends Senerario
 	
 	public TheLavaRises(ButWorld butWorld) 
 	{
-		super("The Lava is rising", butWorld, Material.LAVA_BUCKET, new String[] {"Every minute (or the amount of time you set) the lava level will riase"});
+		super("The Lava is rising", butWorld, Material.LAVA_BUCKET, new String[] {"Every minute (or the amount of time you set) the lava level will riase"}, "WilburSoot");
 	}
 
 	

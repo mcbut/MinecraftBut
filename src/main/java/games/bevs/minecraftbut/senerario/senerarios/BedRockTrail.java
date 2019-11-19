@@ -27,7 +27,7 @@ public class BedRockTrail extends Senerario
 	private double bedrockCheckSpeed = 0.2;
 	public BedRockTrail(ButWorld butWorld) 
 	{
-		super("Bedrock Trail", butWorld, Material.BEDROCK, new String[] {"Where ever you move, you leave a bedrock trail"});
+		super("Bedrock Trail", butWorld, Material.BEDROCK, new String[] {"Where ever you move, you leave a bedrock trail"}, "WilburSoot");
 	}
 
 	

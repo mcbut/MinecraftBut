@@ -16,7 +16,7 @@ public class EnderDragonAppears extends Senerario
 	private int heightY = 140;
 	public EnderDragonAppears(ButWorld butWorld) 
 	{
-		super("An Enderdragon appears", butWorld, Material.DRAGON_EGG, new String[]{ "Every 3 minutes (Or the amount of time you set) an ender dragon will spawn" });
+		super("An Enderdragon appears", butWorld, Material.DRAGON_EGG, new String[]{ "Every 3 minutes (Or the amount of time you set) an ender dragon will spawn" }, "Sprock");
 	}
 
 	

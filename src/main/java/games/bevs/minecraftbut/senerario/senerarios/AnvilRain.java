@@ -25,7 +25,7 @@ public class AnvilRain extends Senerario {
 
 	public AnvilRain(ButWorld butWorld) {
 		super("Anvil Rain", butWorld, XMaterial.ANVIL.parseMaterial(),
-				new String[] { "Anvils will spawn from the sky every minute" });
+				new String[] { "Anvils will spawn from the sky every minute" }, "BadBoyHalo");
 	}
 
 	@Override

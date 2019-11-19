@@ -28,7 +28,7 @@ public class BlockPotions extends Senerario
 	
 	public BlockPotions(ButWorld butWorld) 
 	{
-		super("Block Potion", butWorld, XMaterial.POTION.parseMaterial(), new String[] {"Blocks with potion effects"});
+		super("Block Potion", butWorld, XMaterial.POTION.parseMaterial(), new String[] {"Blocks with potion effects"}, "BajanCandian");
 	}	
 	
 	@Override
