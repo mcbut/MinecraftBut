@@ -31,6 +31,7 @@ public class WelcomeListener implements Listener
 		
 		player.setPlayerListName(CC.gray + player.getName());
 		player.sendMessage(CREDIT);
+		player.sendMessage(CC.gray + "Remember to give credit to the creators of the senerarios you use.");
 		TabUtils.sendTab(player, CREDIT, "");
 	}
 }

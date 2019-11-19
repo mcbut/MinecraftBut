@@ -62,6 +62,17 @@ public class MinecraftButCommand extends Command
 		}
 	}
 	
+	public void listCredits(CommandSender sender)
+	{
+		sender.sendMessage(CC.green + "Sprock : https://www.youtube.com/channel/UCQlwZZLg3YZb5RYboR94jPQ");
+		sender.sendMessage(CC.green + "GeorgeNotFound : https://www.youtube.com/user/GeorgeeeHDPlays");
+		sender.sendMessage(CC.green + "BadBoyHalo : https://www.youtube.com/user/thesaintsofgames");
+		sender.sendMessage(CC.green + "Dream : https://www.youtube.com/user/DreamTraps");
+		sender.sendMessage(CC.green + "Skeppy : https://www.youtube.com/channel/UCzMjRlKVO9XIqH_crIFpi6w");
+		sender.sendMessage(CC.green + "WilburSoot : https://www.youtube.com/channel/UC1n_PfsVqxllCcnMPlxBIjw");
+		sender.sendMessage(CC.green + "CallMeCarson : https://www.youtube.com/user/TheBlueCrewPros");
+		
+	}
 
 	@Override
 	public boolean execute(CommandSender sender, String cmd, String[] args)
@@ -80,6 +91,12 @@ public class MinecraftButCommand extends Command
 				return true;
 			}
 			
+			if(args[0].equalsIgnoreCase("credit") || args[0].equalsIgnoreCase("credits") || args[0].equalsIgnoreCase("c"))
+			{
+				this.listCredits(sender);
+				return true;
+			}
+			
 			if(args[0].equalsIgnoreCase("helpall") || args[0].equalsIgnoreCase("ha"))
 			{
 				Iterator<Senerario> senerarios = MinecraftButPlugin.getPlugin().getScenerarioManager().getSenerarios().values().iterator();
@@ -94,6 +111,7 @@ public class MinecraftButCommand extends Command
 			if(args[0].equalsIgnoreCase("help") || args[0].equalsIgnoreCase("h"))
 			{
 				sender.sendMessage(CC.aqua + "/MinecraftBut list - Will list all Senerario");
+				sender.sendMessage(CC.aqua + "/MinecraftBut credit - List creators of each idea");
 				sender.sendMessage(CC.aqua + "/MinecraftBut help - Helps with top level commands");
 				sender.sendMessage(CC.aqua + "/MinecraftBut helpall - Will tell you all Senerario configs");
 				sender.sendMessage(CC.aqua + "/MinecraftBut Senerario <SenerarioId> - Allows you to config a Senerario");
