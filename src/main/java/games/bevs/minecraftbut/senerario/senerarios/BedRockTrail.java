@@ -48,7 +48,7 @@ public class BedRockTrail extends Senerario
 	{
 		Player player = e.getPlayer();
 		
-		if(player.getGameMode() == GameMode.CREATIVE)
+		if(player.getGameMode() == GameMode.CREATIVE || player.getGameMode() == GameMode.SPECTATOR)
 			return;
 		Location lastLoc = lastLocation.get(player.getUniqueId());
 		if(lastLoc == null)
