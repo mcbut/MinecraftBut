@@ -37,7 +37,7 @@ Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCN
 * Anvil Rain - Anvil falls from the sky
 * Death Out - Set into spectator when you die (or kick when you die)
 * World Decay - Every  block the sun touches slowly breaks down
-* Linked Inventories - everyone shares inventory
+* Linked Inventories - everyone shares inventory (1.8 only)
 * Linked Health - everyone shares health
 * Linked Deaths - One player dies, everyone dies
 * FasterAndFaster - get faster every minute
