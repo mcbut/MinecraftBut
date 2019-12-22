@@ -105,6 +105,9 @@ Note: I will not support the plugin running on multiple worlds at once, as it's 
 [![Feature Requests](https://feathub.com/HeathLoganCampbell/MinecraftBut?format=svg)](https://feathub.com/HeathLoganCampbell/MinecraftBut)
 
 ## Developers
+## How To set up
+https://youtu.be/l7zyhCOyD4A
+
 ## Tools used
 * [Maven](https://maven.apache.org/) this should already be install on most common IDEs 
 * [BuildTools](https://www.spigotmc.org/wiki/buildtools/#1-8-8)
