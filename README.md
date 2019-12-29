@@ -3,25 +3,26 @@
 A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
 The youtubers will spawn in a small world with the option to apply multiple different senerarios
 
-## join the DISCORD for more content
-[Join the discord](https://discord.gg/cDSK9YF)  
-Note that this is more of a chill area, I'm not gonna offer much support
+## Join the Discord server for support
+[Join the Discord](https://discord.gg/cDSK9YF)  
+
 
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
-It'll also be nice if you star'ed the project :) (It pretty much means 'like' & It's free)
+
+It'll also be nice if you starred the project <3 (It pretty much means 'like' & it's free)
 
 ## Versions
-Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14, versions in between are up in the air in terms of bugginess
+Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions
 
 ## Videos
-[Skeppy's video, Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
-[Skeppy's video, Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
-[Wilbur Soot's video, Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
-[Skeppy's Video, TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
-[Skeepy's Video, 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
-[Skeppy's Video, Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
-[Skeppy's video, the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
+[Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
+[Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
+[Wilbur Soot's video: Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
+[Skeppy's video: TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
+[Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
+[Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
+[Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
 
 ## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
@@ -46,44 +47,46 @@ Mainly we support [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCN
 * Shrinking Inventory - you get less and less inventory space as time goes on
 * Block Potion - every block gives a potion when broken
 
-use to view all credits and their channels
+Command to view all credits and their YouTube channels:
 ```
 /mb credit
 ```
 
 
 ## How to install
-* Have a Spigot server on version  [1.8](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
- * You can buy a spigot server from [here](https://mcprohosting.com/order?aff=81875)
- * or you can selfhost it
+* Use Spigot on version [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
+ * You can buy a Minecraft server from [here](https://mcprohosting.com/order?aff=81875)
+ * or you can self-host it
+* Configure the server how you want it in server.properties
 * Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
-* start the server and you're done
+* Start the server and you're done
+Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. I'm unsure of Bukkit and CraftBukkit, however.
 
 ## Permissions
 
 ```
 minecraftbut.command.minecraftbut
 ```
-We only have one permission for the root command
+We only have one permission node for the root command
 
 ## Commands
 ```
 /MinecraftBut
 /mb
 ```
-Open's the Menu to enable and disable Senerarios
+Opens the GUI to enable and disable Senerarios
 
 ```
 /MinecraftBut help
 /mb help
 ```
-help for top level command
+Help command
 
 ```
 /MinecraftBut Senerario <senerarioId> help
 /mb s <senerarioId> help
 ```
-learn ways that you can configure a Senerario
+Learn ways that you can configure a Senerario
 
 ```
 /MinecraftBut Senerario <senerarioId> <Args>
@@ -97,12 +100,13 @@ Note: senerarioId can be found in the lore of the item in the menu
 /MinecraftBut changeworld <WorldName>
 /mb cw <Name>
 ```
-Change the world that the plugin is running on, Use case is just for multiverse support
+Change the world that the plugin is running on, use case is just for Multiverse support
 
-Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the youtubers
+Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the YouTubers
 
 ## Features
 [![Feature Requests](https://feathub.com/HeathLoganCampbell/MinecraftBut?format=svg)](https://feathub.com/HeathLoganCampbell/MinecraftBut)
+Or request a feature on the Discord server
 
 ## Developers
 ## How To set up
@@ -177,6 +181,6 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin. 
 So it would be dope if I made something back from it.
-Baked with love by Sprock
+Baked with love by Sprock (Heath)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)
