@@ -6,6 +6,8 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 ## Join the Discord server for support
 [Join the Discord](https://discord.gg/cDSK9YF)  
 
+## Reddit
+[https://www.reddit.com/r/MinecratBut](https://www.reddit.com/r/MinecratBut)
 
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
