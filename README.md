@@ -9,6 +9,9 @@ The youtubers will spawn in a small world with the option to apply multiple diff
 ## Reddit
 [https://www.reddit.com/r/MinecratBut](https://www.reddit.com/r/MinecratBut)
 
+## Don't wanna set up the plugin yourself?
+Join my server play.mcbut.net
+
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
 
