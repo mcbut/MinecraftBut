@@ -18,7 +18,7 @@ Join my server `play.minecraftbut.net`
 It'll also be nice if you starred the project <3 (It pretty much means 'like' & it's free)
 
 ## Versions
-Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend Spigot over Bukkit.
+Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend you use Spigot over Bukkit or CraftBukkit.
 
 ## Videos
 [Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
@@ -66,7 +66,7 @@ Command to view all credits and their YouTube channels:
 * Configure the server how you want it in server.properties
 * Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
 * Start the server and you're done
-Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. I'm unsure of Bukkit and CraftBukkit, however.
+Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. I'm unsure of Bukkit and CraftBukkit, however. Only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
 
 ## Permissions
 
@@ -108,14 +108,14 @@ Note: senerarioId can be found in the lore of the item in the menu
 ```
 Change the world that the plugin is running on, use case is just for Multiverse support
 
-Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the YouTubers
+Note: I will not support the plugin running on multiple worlds at once, as it's out of the scope of common need of the YouTubers, however I think it works in the Nether and The End.
 
 ## Features
-[![Feature Requests](https://feathub.com/HeathLoganCampbell/MinecraftBut?format=svg)](https://feathub.com/HeathLoganCampbell/MinecraftBut)
+[Feature Requests](https://feathub.com/HeathLoganCampbell/MinecraftBut)
 Or request a feature on the Discord server
 
 ## Developers
-## How To set up
+## How To set up the work environment
 https://youtu.be/l7zyhCOyD4A
 
 ## Tools used
@@ -131,7 +131,7 @@ A folder called  "MinecraftBut" is now created, so from now on you can cd to thi
 ``git pull`` to download changes made
 
 ### Add a Senerario
-Simply extend Senerario, like so
+Simply extend Senerario, like so:
 ```java
 public class DummyExample extends Senerario {
  //This allows players to edit the field through the command 
