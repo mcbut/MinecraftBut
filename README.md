@@ -1,24 +1,24 @@
 # MinecraftBut
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)  
-A Minecraft Plugin for youtubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
-The youtubers will spawn in a small world with the option to apply multiple different senerarios
+A Minecraft Plugin created for YouTubers such as BajanCandian, Skeppy, BadBoyHalo, A6D
+The YouTubers spawn in a small world with the option to apply multiple different senerarios
 
 ## Join the Discord server for support
-[Join the Discord](https://discord.gg/cDSK9YF)  
+[Join the Discord](https://discord.gg/fx9Kg5N) (Note: You must be 13 years of age or older to use Discord)
 
 ## Reddit
-[https://www.reddit.com/r/MinecratBut](https://www.reddit.com/r/MinecratBut)
+[/r/MinecratBut](https://www.reddit.com/r/MinecratBut) (yes we know it's misspelt)
 
 ## Don't wanna set up the plugin yourself?
-Join my server play.mcbut.net
+Join my server `play.minecraftbut.net`
 
 ## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
+[Download the plugin](https://github.com/mcbut/MinecraftBut/releases)
 
 It'll also be nice if you starred the project <3 (It pretty much means 'like' & it's free)
 
 ## Versions
-Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions
+Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend Spigot over Bukkit.
 
 ## Videos
 [Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
@@ -28,6 +28,7 @@ Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHN
 [Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
 [Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
 [Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
+[Skeppy's video: Minecraft, But Sunlight Kills You](https://www.youtube.com/watch?v=QW1dvp4xSE8)
 
 ## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
@@ -182,6 +183,8 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 ## Download
 [Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
 
+## Contributing
+If you modify this plugin in any positive way please consider submitting your changes as a pull request. After all, this is open-source.
 
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin. 
