@@ -2,6 +2,7 @@ package games.bevs.minecraftbut;
 
 import java.lang.reflect.Field;
 
+import games.bevs.minecraftbut.senerario.senerarios.mathorstop.MathOrStop;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -86,10 +87,12 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new LinkedHealth(butWorld));
 		this.scenerarioManager.registerSenerario(new ShrinkingInventory(butWorld));
 		this.scenerarioManager.registerSenerario(new MobsMultiple(butWorld));
+
 		
 		
 		if(minecraft18)
 		{
+			this.scenerarioManager.registerSenerario(new MathOrStop(butWorld));
 			this.scenerarioManager.registerSenerario(new AnvilRain(butWorld));
 			this.scenerarioManager.registerSenerario(new LinkedInventories(butWorld));
 		}
