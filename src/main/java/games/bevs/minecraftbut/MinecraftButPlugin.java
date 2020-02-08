@@ -2,6 +2,7 @@ package games.bevs.minecraftbut;
 
 import java.lang.reflect.Field;
 
+import games.bevs.minecraftbut.senerario.senerarios.*;
 import games.bevs.minecraftbut.senerario.senerarios.mathorstop.MathOrStop;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
@@ -10,24 +11,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import games.bevs.minecraftbut.commands.MinecraftButCommand;
 import games.bevs.minecraftbut.listeners.WelcomeListener;
 import games.bevs.minecraftbut.senerario.ScenerarioManager;
-import games.bevs.minecraftbut.senerario.senerarios.AnvilRain;
-import games.bevs.minecraftbut.senerario.senerarios.BedRockTrail;
-import games.bevs.minecraftbut.senerario.senerarios.BlockPotions;
-import games.bevs.minecraftbut.senerario.senerarios.EnderDragonAppears;
-import games.bevs.minecraftbut.senerario.senerarios.FasterAndFaster;
-import games.bevs.minecraftbut.senerario.senerarios.LinkedDeaths;
-import games.bevs.minecraftbut.senerario.senerarios.LinkedHealth;
-import games.bevs.minecraftbut.senerario.senerarios.MaducerWorld;
-import games.bevs.minecraftbut.senerario.senerarios.MobsMultiple;
-import games.bevs.minecraftbut.senerario.senerarios.NoJump;
-import games.bevs.minecraftbut.senerario.senerarios.OneHit;
-import games.bevs.minecraftbut.senerario.senerarios.RainingBlocks;
-import games.bevs.minecraftbut.senerario.senerarios.ShrinkingInventory;
-import games.bevs.minecraftbut.senerario.senerarios.TNTOnSelf;
-import games.bevs.minecraftbut.senerario.senerarios.TNTRain;
-import games.bevs.minecraftbut.senerario.senerarios.TheLavaRises;
-import games.bevs.minecraftbut.senerario.senerarios.TheWaterRises;
-import games.bevs.minecraftbut.senerario.senerarios.WorldDecay;
 import games.bevs.minecraftbut.senerario.senerarios.deathout.DeathOut;
 import games.bevs.minecraftbut.senerario.senerarios.gemeater.GemEater;
 import games.bevs.minecraftbut.senerario.senerarios.linkedinvs.LinkedInventories;
@@ -87,9 +70,10 @@ public class MinecraftButPlugin extends JavaPlugin
 		this.scenerarioManager.registerSenerario(new LinkedHealth(butWorld));
 		this.scenerarioManager.registerSenerario(new ShrinkingInventory(butWorld));
 		this.scenerarioManager.registerSenerario(new MobsMultiple(butWorld));
+		this.scenerarioManager.registerSenerario(new SunDeath(butWorld));
 
-		
-		
+
+
 		if(minecraft18)
 		{
 			this.scenerarioManager.registerSenerario(new MathOrStop(butWorld));
