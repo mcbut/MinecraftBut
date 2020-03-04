@@ -21,14 +21,15 @@ It'll also be nice if you starred the project <3 (It pretty much means 'like' & 
 Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend you use Spigot over Bukkit or CraftBukkit.
 
 ## Videos
-[Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
-[Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
-[Wilbur Soot's video: Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
-[Skeppy's video: TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
-[Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
-[Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
-[Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
-[Skeppy's video: Minecraft, But Sunlight Kills You](https://www.youtube.com/watch?v=QW1dvp4xSE8)
+* [Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
+* [Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
+* [Wilbur Soot's video: Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
+* [Skeppy's video: TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
+* [Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
+* [Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
+* [Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
+* [Skeppy's video: Minecraft, But Sunlight Kills You](https://www.youtube.com/watch?v=QW1dvp4xSE8)
+##### *(Want to be added to this list? Contact Heath or CyberFlame on Discord)*
 
 ## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
@@ -184,6 +185,7 @@ You can find more examples within [games.bevs.minecraftbut.senerario.senerarios]
 
 ## Contributing
 If you modify this plugin in any positive way please consider submitting your changes as a pull request. After all, this is open-source.
+If you find a bug please submit an issue describing the bug.
 
 ## Donate
 I don't expect anyone to really donate, but I have put time into this plugin so it would be dope if I made something back from it.
