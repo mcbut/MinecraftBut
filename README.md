@@ -60,13 +60,12 @@ Command to view all credits and their YouTube channels:
 
 
 ## How to install
-* Use Spigot on version [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
- * You can buy a Minecraft server from [here](https://mcprohosting.com/order?aff=81875)
- * or you can self-host it
-* Configure the server how you want it in server.properties
-* Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
-* Start the server and you're done
-Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. You might even be able to use Bukkit and CraftBukkit, however, only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
+0. Use Spigot on version [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14 (these are the only officially supported ones)
+0. You can buy a Minecraft server from [here](https://mcprohosting.com/order?aff=81875) unless you already have a host or you can self-host it.
+0. Configure the server how you want it in server.properties
+0. Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
+0. Start the server and you're done
+**Sidenote**: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. You might even be able to use Bukkit and CraftBukkit, however, only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
 
 ## Permissions
 
