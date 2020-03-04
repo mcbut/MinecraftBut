@@ -10,10 +10,10 @@ The YouTubers spawn in a small world with the option to apply multiple different
 [/r/MinecratBut](https://www.reddit.com/r/MinecratBut) (yes we know it's misspelt)
 
 ## Don't wanna set up the plugin yourself?
-Join my server `play.minecraftbut.net`
+Join my server `play.minecraftbut.net` where you can play arcade games with friends and play MinecraftBut, as well as regularly hosted events.
 
 ## Download
-[Download the plugin](https://github.com/mcbut/MinecraftBut/releases)
+[Download the latest version of the plugin](https://github.com/mcbut/MinecraftBut/releases/latest)
 
 It'll also be nice if you starred the project <3 (It pretty much means 'like' & it's free)
 
@@ -66,7 +66,7 @@ Command to view all credits and their YouTube channels:
 * Configure the server how you want it in server.properties
 * Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
 * Start the server and you're done
-Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. I'm unsure of Bukkit and CraftBukkit, however. Only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
+Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. You might even be able to use Bukkit and CraftBukkit, however, only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
 
 ## Permissions
 
@@ -115,15 +115,15 @@ Note: I will not support the plugin running on multiple worlds at once, as it's 
 Or request a feature on the Discord server
 
 ## Developers
-## How To set up the work environment
+### How To set up the work environment
 https://youtu.be/l7zyhCOyD4A
 
-## Tools used
+### Tools used
 * [Maven](https://maven.apache.org/) this should already be install on most common IDEs 
 * [BuildTools](https://www.spigotmc.org/wiki/buildtools/#1-8-8)
 * [Lombok](https://projectlombok.org/download)
 
-## Download code
+### Download code
 ```
 git clone git@github.com:HeathLoganCampbell/MinecraftBut.git
 ```
@@ -180,15 +180,14 @@ private void populateScenerarios(ButWorld butWorld)
 You can find more examples within [games.bevs.minecraftbut.senerario.senerarios](https://github.com/HeathLoganCampbell/MinecraftBut/tree/master/src/main/java/games/bevs/minecraftbut/senerario/senerarios)
 
 
-## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
+## Looking for a specific release?
+[Releases](https://github.com/HeathLoganCampbell/MinecraftBut/releases)
 
 ## Contributing
 If you modify this plugin in any positive way please consider submitting your changes as a pull request. After all, this is open-source.
 
 ## Donate
-I don't expect anyone to really donate, but I have put time into this plugin. 
-So it would be dope if I made something back from it.
+I don't expect anyone to really donate, but I have put time into this plugin so it would be dope if I made something back from it.
 Baked with love by Sprock (Heath)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)
