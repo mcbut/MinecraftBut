@@ -10,10 +10,10 @@ The YouTubers spawn in a small world with the option to apply multiple different
 [/r/MinecratBut](https://www.reddit.com/r/MinecratBut) (yes we know it's misspelt)
 
 ## Don't wanna set up the plugin yourself?
-Join my server `play.minecraftbut.net`
+Join my server `play.minecraftbut.net` where you can play arcade games with friends and play MinecraftBut, as well as regularly hosted events.
 
 ## Download
-[Download the plugin](https://github.com/mcbut/MinecraftBut/releases)
+[Download the latest version of the plugin](https://github.com/mcbut/MinecraftBut/releases/latest)
 
 It'll also be nice if you starred the project <3 (It pretty much means 'like' & it's free)
 
@@ -21,14 +21,15 @@ It'll also be nice if you starred the project <3 (It pretty much means 'like' & 
 Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend you use Spigot over Bukkit or CraftBukkit.
 
 ## Videos
-[Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
-[Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
-[Wilbur Soot's video: Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
-[Skeppy's video: TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
-[Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
-[Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
-[Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
-[Skeppy's video: Minecraft, But Sunlight Kills You](https://www.youtube.com/watch?v=QW1dvp4xSE8)
+* [Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
+* [Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
+* [Wilbur Soot's video: Minecraft, But I Leave a Trail of Bedrock - 972,845 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)  
+* [Skeppy's video: TNT Rain](https://www.youtube.com/watch?v=kkU8-3teKS0)  
+* [Skeepy's video: 1 Hit](https://www.youtube.com/watch?v=bpvQGu1cwlQ)  
+* [Skeppy's video: Anvil rain](https://www.youtube.com/watch?v=IONiD9ZnqEg)  
+* [Skeppy's video: the world decays](https://www.youtube.com/watch?v=I9PjCahtpzs)
+* [Skeppy's video: Minecraft, But Sunlight Kills You](https://www.youtube.com/watch?v=QW1dvp4xSE8)
+##### *(Want to be added to this list? Contact Heath or CyberFlame on Discord)*
 
 ## Senerario (Yes, I know it's spelt wrong haha)
 * Lava is Rising
@@ -60,13 +61,12 @@ Command to view all credits and their YouTube channels:
 
 
 ## How to install
-* Use Spigot on version [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14
- * You can buy a Minecraft server from [here](https://mcprohosting.com/order?aff=81875)
- * or you can self-host it
-* Configure the server how you want it in server.properties
-* Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
-* Start the server and you're done
-Sidenote: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. I'm unsure of Bukkit and CraftBukkit, however. Only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
+0. Use Spigot on version [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) or 1.14 (these are the only officially supported ones)
+0. You can buy a Minecraft server from [here](https://mcprohosting.com/order?aff=81875) unless you already have a host or you can self-host it.
+0. Configure the server how you want it in server.properties
+0. Then just drop the "MinecraftBut.jar" into the "/plugins" folder of the server
+0. Start the server and you're done
+**Sidenote**: You could probably get away with using PaperSpigot or TacoSpigot, as they're variants of Spigot. You might even be able to use Bukkit and CraftBukkit, however, only Bukkit inherited "jars" are supported, so that means no Sponge etc. but modified spigot jars should be fine.
 
 ## Permissions
 
@@ -115,15 +115,15 @@ Note: I will not support the plugin running on multiple worlds at once, as it's 
 Or request a feature on the Discord server
 
 ## Developers
-## How To set up the work environment
+### How To set up the work environment
 https://youtu.be/l7zyhCOyD4A
 
-## Tools used
+### Tools used
 * [Maven](https://maven.apache.org/) this should already be install on most common IDEs 
 * [BuildTools](https://www.spigotmc.org/wiki/buildtools/#1-8-8)
 * [Lombok](https://projectlombok.org/download)
 
-## Download code
+### Download code
 ```
 git clone git@github.com:HeathLoganCampbell/MinecraftBut.git
 ```
@@ -180,15 +180,15 @@ private void populateScenerarios(ButWorld butWorld)
 You can find more examples within [games.bevs.minecraftbut.senerario.senerarios](https://github.com/HeathLoganCampbell/MinecraftBut/tree/master/src/main/java/games/bevs/minecraftbut/senerario/senerarios)
 
 
-## Download
-[Download the plugin](https://github.com/HeathLoganCampbell/MinecraftBut/releases/tag/1.7)
+## Looking for a specific release?
+[Releases](https://github.com/HeathLoganCampbell/MinecraftBut/releases)
 
 ## Contributing
 If you modify this plugin in any positive way please consider submitting your changes as a pull request. After all, this is open-source.
+If you find a bug please submit an issue describing the bug.
 
 ## Donate
-I don't expect anyone to really donate, but I have put time into this plugin. 
-So it would be dope if I made something back from it.
+I don't expect anyone to really donate, but I have put time into this plugin so it would be dope if I made something back from it.
 Baked with love by Sprock (Heath)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VWG7DUFDRYXDA)
