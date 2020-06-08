@@ -20,6 +20,18 @@ It'll also be nice if you starred the project <3 (It pretty much means 'like' & 
 ## Versions
 Mainly we support [1.8.x](https://getbukkit.org/get/WAH0jXqYA2s3Gzzg3toWHG1R3lHNCNZY) & 1.14.x servers. Other versions are untested and support will generally not be provided when using other versions. I recommend TacoSpigot or PaperSpigot, but as a bare minimum I recommend you use Spigot over Bukkit or CraftBukkit.
 
+## Support <3
+We use yourkit for performance tuning of this project
+
+YourKit supports open source projects with innovative and intelligent tools 
+for monitoring and profiling Java and .NET applications.
+YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler), 
+[YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/), [YourKit YouMonitor](https://www.yourkit.com/youmonitor)
+
+Personally I would stronly recommend them if you're a developer :D
+
+[![yourkit logo](https://www.yourkit.com/images/yklogo.png)](https://www.yourkit.com)
+
 ## Videos
 * [Skeppy's video: Lava is rising - 558,119 views](https://www.youtube.com/watch?v=0dvbqzXiA_o)    
 * [Skeppy's video: Water is rising - 1,113,071 views](https://www.youtube.com/watch?v=Kcul2iXfPDY)   
