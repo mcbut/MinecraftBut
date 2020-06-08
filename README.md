@@ -28,7 +28,7 @@ for monitoring and profiling Java and .NET applications.
 YourKit is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler), 
 [YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/), [YourKit YouMonitor](https://www.yourkit.com/youmonitor)
 
-Personally I would stronly recommend them if you're a developer :D
+Personally I would strongly recommend them if you're a developer :D
 
 [![yourkit logo](https://www.yourkit.com/images/yklogo.png)](https://www.yourkit.com)
 
