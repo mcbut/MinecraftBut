@@ -15,7 +15,7 @@ import games.bevs.minecraftbut.world.ButWorld;
 
 public class BlockPotions extends Senerario
 {
-	private static final PotionEffectType[] EFFECTS = new PotionEffectType[] { PotionEffectType.BLINDNESS, PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.HEALTH_BOOST, PotionEffectType.JUMP, PotionEffectType.SPEED, PotionEffectType.HUNGER, PotionEffectType.HARM, PotionEffectType.CONFUSION, PotionEffectType.INCREASE_DAMAGE, PotionEffectType.INVISIBILITY, PotionEffectType.POISON, PotionEffectType.SATURATION, PotionEffectType.SLOW, PotionEffectType.SLOW_DIGGING, PotionEffectType.WITHER, PotionEffectType.WEAKNESS};
+	private static final PotionEffectType[] EFFECTS = new PotionEffectType[] { PotionEffectType.BLINDNESS, PotionEffectType.DAMAGE_RESISTANCE, PotionEffectType.HEALTH_BOOST, PotionEffectType.JUMP, PotionEffectType.SPEED, PotionEffectType.HUNGER, PotionEffectType.HARM, PotionEffectType.CONFUSION, PotionEffectType.INVISIBILITY, PotionEffectType.POISON, PotionEffectType.SATURATION, PotionEffectType.SLOW, PotionEffectType.SLOW_DIGGING, PotionEffectType.WITHER, PotionEffectType.WEAKNESS};
 	@Optional
 	private int maxPotionLevel = 5;
 	@Optional
